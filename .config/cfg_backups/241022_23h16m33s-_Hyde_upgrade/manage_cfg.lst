@@ -1,0 +1,47 @@
+O|${HOME}|.zshrc|zsh oh-my-zsh-git zsh-theme-powerlevel10k pokemon-colorscripts-git
+O|${HOME}|.p10k.zsh|zsh oh-my-zsh-git zsh-theme-powerlevel10k pokemon-colorscripts-git
+O|${HOME}/.config/Code/User|settings.json|visual-studio-code-bin
+O|${HOME}/.config/Code - OSS/User|settings.json|code
+O|${HOME}/.config|code-flags.conf|visual-studio-code-bin
+O|${HOME}/.config|code-flags.conf|code
+O|${HOME}/.config|spotify-flags.conf|spotify
+O|${HOME}/.config|dunst|dunst
+O|${HOME}/.config|fish|fish
+O|${HOME}/.config|lsd|lsd
+O|${HOME}/.config/hyde|wallbash|hyprland
+O|${HOME}/.config/hypr|animations.conf|hyprland
+O|${HOME}/.config/hypr|hyprland.conf|hyprland
+O|${HOME}/.config/hypr|windowrules.conf|hyprland
+O|${HOME}/.config/hypr|themes|hyprland
+O|${HOME}/.config/hypr|keybindings.conf|hyprland
+O|${HOME}/.config/hypr|monitors.conf|hyprland
+O|${HOME}/.config/hypr|userprefs.conf|hyprland
+O|${HOME}/.config/hypr|nvidia.conf|hyprland nvidia-utils
+O|${HOME}/.local/share|bin|hyprland
+O|${HOME}/.config|kitty|kitty
+O|${HOME}/.config|Kvantum|kvantum
+O|${HOME}/.config|MangoHud|mangohud
+O|${HOME}/.config|fastfetch|fastfetch
+O|${HOME}/.config|qt5ct|qt5ct
+O|${HOME}/.config|qt6ct|qt6ct
+O|${HOME}/.config|rofi|rofi
+O|${HOME}/.config|swaylock|swaylock-effects
+O|${HOME}/.config/waybar|modules|waybar
+O|${HOME}/.config/waybar|config.jsonc|waybar
+O|${HOME}/.config/waybar|style.css|waybar
+O|${HOME}/.config/waybar|theme.css|waybar
+O|${HOME}/.config/waybar|config.ctl|waybar
+O|${HOME}/.config|wlogout|wlogout
+O|${HOME}/.config|xsettingsd|nwg-look
+O|${HOME}/.config|nwg-look|nwg-look
+O|${HOME}/.config|gtk-3.0|nwg-look
+O|${HOME}/.icons|default|nwg-look
+O|${HOME}|.gtkrc-2.0|nwg-look
+O|${HOME}/.config|dolphinrc|dolphin
+O|${HOME}/.config|kdeglobals|dolphin
+O|${HOME}/.config|baloofilerc|dolphin
+O|${HOME}/.config/menus|applications.menu|dolphin
+O|${HOME}/.local/share|dolphin|dolphin
+O|${HOME}/.local/share/kxmlgui5|dolphin|dolphin
+O|${HOME}/.local/share/kio/servicemenus|hydewallpaper.desktop|dolphin
+O|${HOME}/.config|libinput-gestures.conf|libinput-gestures

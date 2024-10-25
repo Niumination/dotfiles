@@ -1,8 +1,0 @@
-[General]
-TerminalApplication=kitty
-
-[Icons]
-Theme=Tela-circle-green
-
-[KShortcutsDialog Settings]
-Dialog Size=600,480
