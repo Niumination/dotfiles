@@ -1,0 +1,6 @@
+2024-11-04 11:28:53.161 [warning] Creation of workbench contribution 'workbench.contrib.preferencesActions' took 22ms.
+2024-11-04 11:28:53.238 [warning] Creation of workbench contribution 'workbench.contrib.explorerViewletViews' took 28ms.
+2024-11-04 11:28:55.016 [info] Started local extension host with pid 14813.
+2024-11-04 11:28:59.753 [warning] [mainThreadStorage] large extension state detected (extensionId: sourcegraph.cody-ai, global: true): 1742.8984375kb. Consider to use 'storageUri' or 'globalStorageUri' to store this data on disk instead.
+2024-11-04 11:29:01.619 [info] [perf] Render performance baseline is 86ms
+2024-11-04 11:29:24.474 [warning] [backup tracker] suspended, ignoring unregister event file:///home/zaryu/.vscode-oss/extensions/sourcegraph.cody-ai-1.38.0-universal/walkthroughs/cody_tutorial.py 

@@ -1,0 +1,8 @@
+[General]
+TerminalApplication=kitty
+
+[Icons]
+Theme=Tela-circle-dracula
+
+[KShortcutsDialog Settings]
+Dialog Size=600,480

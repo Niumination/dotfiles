@@ -1,0 +1,7 @@
+2024/10/30-13:50:33.529 1102 Reusing MANIFEST /home/zaryu/.config/chromium/Default/IndexedDB/https_dm.terabox.app_0.indexeddb.leveldb/MANIFEST-000001
+2024/10/30-13:50:33.530 1102 Recovering log #27
+2024/10/30-13:50:33.531 1102 Reusing old log /home/zaryu/.config/chromium/Default/IndexedDB/https_dm.terabox.app_0.indexeddb.leveldb/000027.log 
+2024/10/30-13:50:35.097 1104 Level-0 table #33: started
+2024/10/30-13:50:35.104 1104 Level-0 table #33: 7617 bytes OK
+2024/10/30-13:50:35.107 1104 Delete type=0 #27
+2024/10/30-13:50:35.111 1102 Manual compaction at level-0 from '\x00\x0d\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0e\x00\x00\x00' @ 0 : 0; will stop at (end)

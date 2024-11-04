@@ -1,0 +1,568 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;  BAR TRANSPARENT TO HIDE UNHIDE SIDEBAR ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(defwidget _revealex [revealon]
+  (revealer :reveal revealon
+            :transition "slideright"
+            :class "vertigo-revealer"
+    (box :orientation "vertical"
+         :class "vertigo-reveal-box"
+         :space-evenly true
+         (toggle-bar)
+)))
+
+(defwidget _revealnd [revealon config]
+  (revealer :reveal revealon
+            :transition "slideright"
+            :class "vertigo-revealer"
+    (scroll :height 10 :vexpand true
+      (box :vexpand true :orientation "vertical"
+           :class "vertigo-reveal-box"
+           :space-evenly false
+            (for layout in {config.layouts}
+              (_label :text {layout.icon}
+                      :tooltip {layout.label}
+                      :vexpand false
+                      :button-class "vertigo-${layout.label}"
+                      :L {layout.command}))))))
+                      
+(defwidget toggle-bar []
+  (box :orientation "vertical" :space-evenly false :class "toggle-bar"
+  (box :space-evenly false 
+  (button :onclick "eww open --toggle bar" :class "toggle-bar" "x")))) 
+  
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;   SIDEBAR WIDGETS   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;  
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defwidget bar []
+  (box :orientation "vertical"
+       :space-evenly false
+       :class "bar-layout-box"
+    (box :space-evenly false :orientation "vertical" :spacing 30
+      (eventbox :onhover "eww update vertigo_revealnd=true"
+                :onhoverlost "eww update vertigo_revealnd=false"
+        (box :space-evenly false :orientation "vertical" :class "")))
+(left)
+(center)
+(right)
+))
+
+(defwidget button-align []
+  (button :class "bar-button-align" :onclick "eww --config ~/.config/eww open panel"
+  (image  :path "${button}"
+          :image-width  30)))
+          
+(defwidget tags []
+  (literal :content tags :orientation "v" :class "tags"))          
+
+(defwidget sep []
+  (label :orientation "h" :valign "center" :class "sep" :text "______"))
+                        
+(defwidget style []
+  (box :orientation "vertical" :space-evenly false :class "bar-dark-button"
+  (box :space-evenly false 
+  (button :onclick "~/.config/eww/scripts/style-switch.sh --pro-dark &" :class "dark-headers-close1" ""))))                              
+
+(defwidget _profile [path size ?tooltip ?button-class ?image-class ?M ?L ?R]
+  (button :onmiddleclick M :onclick L :onrightclick R :timeout "2s" :tooltip tooltip :class "vertigo-button ${button-class}"
+   (image :path path :image-width size :class "vertigo-image ${image-class}"))) 
+   
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;; WIDEBAR WIDGETS ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(defwidget _brand [path size ?tooltip ?button-class ?image-class ?M ?L ?R]
+  (button :onmiddleclick M :onclick "eww --config ~/.config/eww close panel" :onrightclick R :timeout "2s" :tooltip tooltip :class "vertigo-button ${button-class}"
+    (image :path path :image-width size :class "vertigo-image ${image-class}")))   
+
+(defwidget panel-switch[]
+  (box :class "panel-switch-container" :height "35" :width "200" :halign "center"
+    (button :class {cPanel == 0 ? "panel-switch-on-button" : "panel-switch-off-button"} :onclick "${EWW_CMD} update cPanel=0 && ${EWW_CMD} update animatePanel=1" "Personal")
+    (button :class {cPanel == 1 ? "panel-switch-on-button" : "panel-switch-off-button"} :onclick "${EWW_CMD} update cPanel=1 && ${EWW_CMD} update animatePanel=1" "Controlpanel  ")))
+
+(defwidget sep-wide []
+  (label :class "sep-wide" :halign "center" :text "__________________"))
+  
+(defwidget chart2 [label value icon icon-class]
+    (box :class "body2"
+         :space-evenly true
+         :orientation "h"
+      (box :class "container2"
+           :space-evenly true
+           :halign "center"
+           :hexpand true
+           :orientation "h"
+        (box :class "chart-container2" :space-evenly false
+          (overlay
+            (circular-progress :value value
+                               :thickness 50
+                               :class "chart2"
+                               :start-at 75
+              (label :text "L")
+            )
+            (label :text "${icon}" :class "chart-icon2 ${icon-class}")
+          )
+        )
+      )
+    )
+  )
+
+(defwidget charts2 []
+  (box :class "chart-container2"
+       :orientation "v"
+       :halign "center"
+       :space-evenly false
+       :spacing 10
+    (box :class "firstrow"
+         :orientation "h"
+         :space-evenly true
+         :spacing 10
+      (chart2 :label "Ram" :icon "󰎆" :icon-class "ram2" :value songtime)
+;;      (chart2 :label "Temp" :icon "" :icon-class "temp2" :value temp)
+    )
+    )
+  )
+
+(defwidget cover []
+      (box :class "music-player-container2" :orientation "v" :space-evenly "false"
+      (box :class "music-player-box" :hexpand "false" :vexpand "false" :space-evenly "false"
+        (box :class "music-player-album2" :space-evenly "false" :style "background-image: radial-gradient(
+          circle farthest-side at center,
+           rgba(0, 0, 0, 0.0) 0%), url('${COVER}');"))))
+
+(defwidget mpd-btn []
+    (box :class "music-player-container-wide" :orientation "v" :halign "center" :space-evenly "false"
+  (box :class "avatar-mpd-footer" :space-evenly false
+  (label :class "avatar-mpd-label-current" :text mpd_current :orientation "h" :hexpand true :halign "start")
+      (label :class "avatar-mpd-label-duration" :text mpd_duration :orientation "h" :halign "end"))
+      (box :class "music-player-box" :hexpand "false" :vexpand "false" :space-evenly "false"
+        (box :class "music-player-info-box" :space-evenly "true" :orientation "v"
+          (box :class "music-player-info-more-box" :orientation "v" :space-evenly "false" 
+;;          (label :halign "center" :class "cava" :wrap "true" :style "color: ${COLOR};" :limit-width 20 :text CAVA)
+            (label :class "music-player-title" :halign "center" :limit-width 20 :text song)
+            (label :class "music-player-artist" :halign "center" :limit-width 20 :text artist))))
+      (box :class "player-buttons-box-wide" :halign "center" :spacing 20 :space-evenly "true"                                      
+        (button :class "player-prev" :onclick "mpc -q previous" "")
+        (button :class "player-pp" :onclick "mpc toggle" "${playpause}")
+        (button :class "player-next" :onclick "mpc -q next" ""))))
+
+(defwidget _mpdx [shufflelbl repeatlbl randomlbl singlelbl consumelbl xfadelbl
+                  shufflecmd randomcmd repeatcmd singlecmd consumecmd xfadecmd
+                  randomc repeatc singlec consumec xfadec]
+  (box :width 150 :space-evenly false :class "ava-mpdx-box" :halign "center" :hexpand true :spacing 10 :orientation "vertical"
+    (box :space-evenly false :class "ava-mpdx-shuffle-repeat-random" :halign "center" :vexpand true :spacing 10
+      (button :onclick shufflecmd :class "ava-mpdx-btn ava-mpdx-btn-shuffle" shufflelbl)
+      (button :onclick repeatcmd :class "ava-mpdx-btn ava-mpdx-btn-repeat ${repeatc}" repeatlbl)
+      (button :onclick randomcmd :class "ava-mpdx-btn ava-mpdx-btn-random ${randomc}" randomlbl))
+    (box :space-evenly false :class "ava-mpdx-single-consume-xfade" :halign "center" :vexpand true :spacing 10
+      (button :onclick singlecmd :class "ava-mpdx-btn ava-mpdx-btn-single ${singlec}" singlelbl)
+      (button :onclick consumecmd :class "ava-mpdx-btn ava-mpdx-btn-consume ${consumec}" consumelbl)
+      (button :onclick xfadecmd :class "ava-mpdx-btn ava-mpdx-btn-xfade ${xfadec}" xfadelbl))))  
+      
+(defwidget darktoggle []
+  (box :orientation "vertical" :space-evenly false :class "dark-layout-box"
+  (box :space-evenly false :class "dark-headers-label"
+(image :path "./assets/moon.png" :image-width "25" :class "vertigo-image")
+(label :text "Dark Mode" :class "dark-headers-label" :halign "start" :hexpand true)
+(button :onclick "~/.config/eww/scripts/style-switch.sh --pro-dark &" :class "dark-headers-close"""))))
+
+(defwidget _profilewide [path size ?tooltip ?button-class ?image-class ?M ?L ?R]
+  (button :onmiddleclick M :onclick L :onrightclick R :timeout "2s" :tooltip tooltip :class "vertigo-button ${button-class}"
+    (image :path path :image-width size :class "vertigo-image ${image-class}"))) 
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; CONTROL PANEL WIDGETS ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(defwidget _ptime [hour minute uptime secs]
+  (box :space-evenly false 
+       :class "chrono-time-box"
+       :width 200
+       :height 80
+       :halign "center"
+       :spacing 25
+    (box :class "chrono-time-radial-box" 
+         :space-evenly false
+         :hexpand true
+         :halign "center"
+         :spacing 20
+    (overlay
+      (circular-progress :value {minute * 100 / 60}
+                         :valign "center"
+                         :vexpand true
+                         :thickness 15
+                         :start-at 40
+                         :class "chrono-prog chrono-prog-minute" minute)
+      (circular-progress :value {secs * 100 / 60}
+                         :valign "center"
+                         :vexpand true
+                         :start-at 90
+                         :thickness 15
+                         :class "chrono-prog chrono-prog-second" secs)))
+    (label :text "" 
+           :class "chrono-sep" 
+           :halign "center")
+    (box :space-evenly false 
+         :orientation "vertical" 
+         :class "chrono-time-label-box" 
+         :hexpand true 
+         :halign "center"
+      (label :halign "end" 
+             :text "${hour}:${minute}" 
+             :class "chrono-time-label")
+      (label :halign "center" 
+             :text uptime 
+             :class "chrono-uptime-label"))))
+             
+(defwidget _fluidbat [label icon_full icon_crit icon_norm class]
+  (overlay :class "bolt-bat-overlay"
+    (progress :width 180 
+              :class "bolt-bat-prog ${class}" 
+              :value {EWW_BATTERY.CMB1.capacity > 95 ? 100 : EWW_BATTERY.CMB1.capacity})
+    (box :valign "center" 
+         :spacing 5 
+         :space-evenly false 
+         :class "bolt-bat-prog-box"
+      (box :halign "start" 
+           :hexpand true 
+           :orientation "vertical" 
+           :space-evenly false 
+           :class "bolt-bat-label-box"
+        (label :halign "start" 
+               :text label 
+               :class "bolt-bat-label")
+        (label :halign "start" 
+               :text "${EWW_BATTERY.CMB1.capacity > 95 ? 100 : EWW_BATTERY.CMB1.capacity}%" 
+               :class "bolt-bat-status-label"))
+      (label :halign "end" 
+             :text {EWW_BATTERY.CMB1.capacity > 95 ? icon_full : EWW_BATTERY.CMB1.capacity < 21 ? icon_crit : icon_norm} 
+             :class "bolt-bat-icon"))))             
+
+(defwidget _wifi [label icon ssid]
+  (box :valign "center"
+       :height 50 
+       :valign "center" 
+       :hexpand true 
+       :space-evenly true 
+       :class "wifi-box"
+    (box :valign "center" 
+         :hexpand true 
+         :orientation "vertical" 
+         :space-evenly false 
+         :class "wifi-label-ssid"
+      (label :halign "start" 
+             :class "wifi-label" 
+             :text label)
+      (label :halign "start" 
+             :class "wifi-ssid" 
+             :text ssid))
+    (label :vexpand false 
+           :valign "center" 
+           :halign "end" 
+           :class "wifi-icon" 
+           :text icon)))
+                
+
+(defwidget battery []
+  (box :class "battery__box"
+       :orientation "h"
+       :spacing 0
+  (label :class "battery__box_icon" :text "${battery_icon}")
+  (label :valign "center" :class "battery__box_percent" :text "${battery}%")))
+
+(defwidget controls []
+  (box :class "controlsbox"
+       :orientation "v"
+       :space-evenly false
+       :spacing 16
+    (box :orientation "h"
+         :space-evenly "false"
+         :class "slider active"
+      (box :class "label"
+            volume_icon
+      )
+      (scale :value volume_value
+             :hexpand true
+             :onchange "amixer -D pulse sset Master {}%"
+             :min 0
+             :max 101)
+      (box :class "scale-label"
+           "${volume_value}%")
+    )
+    (box :class "slider"
+         :orientation "h"
+         :space-evenly "false"
+      (box :class "label"
+            "")
+      (scale :value ram
+             :hexpand true
+             :active false
+             :min 0
+             :max 101)
+      (box :class "scale-label "
+           "${ram2}%"
+           )
+    )
+    (box :class "slider"
+         :orientation "h"
+         :space-evenly "false"
+      (box :class "label"
+           "")
+      (scale :value cpu
+             :hexpand true
+             :active false
+             :min 0
+             :max 101)
+      (box :class "scale-label"
+           "${cpu}%")
+    )
+    (box    :orientation "h"
+                        :class "metric-root"
+                        :space-evenly false
+                        (label  :text " "
+                                :class "metric-lable")
+                        (scale  :min 0
+                                :max 101
+                                :active "false"
+                                :value {round((1 - (EWW_DISK["/"].free / EWW_DISK["/"].total)) * 100, 0)}))))
+
+
+
+(defwidget weather []
+  (box :orientation "h" :space-evenly false :class "weatr-box"
+      (box :orientation "h" :space-evenly true
+       (box 
+          (literal :content weather )))))
+ 
+
+(defwidget chart [label value icon icon-class]
+  (box :class "chart-container"
+       :orientation "v"
+       :space-evenly false
+    (box :class "header"
+         :space-evenly true
+         :orientation "h"
+      (label :text "${label}" :class "label" :halign "center")
+    )
+    (box :class "body"
+         :space-evenly true
+         :orientation "h"
+      (box :class "container"
+           :space-evenly true
+           :halign "center"
+           :hexpand true
+           :orientation "h"
+        (box :class "chart-container" :space-evenly false
+          (overlay
+            (circular-progress :value value
+                               :thickness 50
+                               :class "chart"
+                               :start-at 75
+              (label :text "L")
+            )
+            (label :text "${icon}" :class "chart-icon ${icon-class}")
+          )
+        )
+      )
+    )
+  )
+)
+
+(defwidget charts []
+  (box :class "bolt-pctl-box"
+       :orientation "v"
+       :space-evenly false
+       :spacing 10
+    (box :class "firstrow"
+         :orientation "v"
+         :space-evenly false
+         :spacing 0
+      (chart :label battery_status :icon "${EWW_BATTERY.CMB1.capacity > 95 ? 100 : EWW_BATTERY.CMB1.capacity}%" :icon-class "cpu" :value {EWW_BATTERY.CMB1.capacity > 95 ? 100 : EWW_BATTERY.CMB1.capacity})
+      (label :text "Battery" :class "chart-battery")
+    )
+    )
+  )
+
+(defwidget _boltwifi [label icon ssid]
+  (box :valign "center"
+       :height 60 
+       :valign "center" 
+       :hexpand true 
+       :space-evenly false 
+       :class "bolt-wifi-box"
+    (box :valign "center" 
+         :hexpand true 
+         :orientation "vertical" 
+         :space-evenly false 
+         :class "bolt-wifi-label-ssid"
+      (label :halign "start" 
+             :class "bolt-wifi-icon" 
+             :text icon)
+      (label :halign "start" 
+             :class "bolt-wifi-ssid" 
+             :text ssid))
+    (label :vexpand false 
+           :valign "center" 
+           :halign "start" 
+           :class "bolt-wifi-label" 
+           :text label)
+           
+           ))
+
+(defwidget chart1 [label value icon icon-class]
+    (box :class "body1"
+         :space-evenly true
+         :orientation "h"
+      (box :class "container1"
+           :space-evenly true
+           :halign "center"
+           :hexpand true
+           :orientation "h"
+        (box :class "chart-container1" :space-evenly false
+          (overlay
+            (circular-progress :value value
+                               :thickness 50
+                               :class "chart1"
+                               :start-at 75
+              (label :text "L")
+            )
+            (label :text "${icon}" :class "chart-icon1 ${icon-class}")
+          )
+        )
+      )
+    )
+  )
+
+(defwidget charts1 []
+  (box :class "chart-container1"
+       :orientation "v"
+       :space-evenly false
+       :spacing 10
+    (box :class "firstrow"
+         :orientation "h"
+         :space-evenly true
+         :spacing 10
+      (chart1 :label "Ram" :icon "" :icon-class "ram1" :value ram)
+      (chart1 :label "Temp" :icon "" :icon-class "temp1" :value temp)
+    )
+    )
+  )
+
+(defwidget sysblock [icon onclick active label]
+  (box :class "block-container"
+       :orientation "v"
+       :space-evenly false
+       :spacing 5
+    (button :class "block ${active ? 'active' : ''}" :onclick "${onclick}"
+      (box :orientation "h"
+           :space-evenly false
+        (box :class "iconbox"
+             :halign "start"
+             :space-evenly true
+             :orientation "h"
+          (label :text "${icon}" :class "icon")
+        )
+        (box :class "sepbox"
+             :halign "center"
+             :space-evenly true
+             :orientation "h"
+          (box :class "sep")
+        )
+        (box :class "chevronbox"
+             :halign "end"
+             :space-evenly true
+             :orientation "h"
+          (label :text "")
+        )
+      )
+    )
+    (label :halign "center" :text "${label}" :class "label")
+  )
+)
+
+(defwidget sysbuttons []
+  (box :class "sysbuttonsbox"
+       :orientation "v"
+       :space-evenly false
+       :spacing 0
+    (box :class "firstrow"
+         :orientation "h"
+         :space-evenly true
+      (box :halign "start"
+           :orientation "h"
+           :space-evenly true
+        (sysblock :icon "${volume_icon}"
+                  :onclick "~/.config/eww/scripts/volume.sh toggle-muted"
+                  :active "${is_muted == 'yes' ? false : true}"
+                  :label "Volume")
+      )
+      (box :halign "center"
+           :orientation "h"
+           :space-evenly true
+         (sysblock :icon "${redshift_state == 'on' ? '' : ''}"
+                  :onclick "~/.config/eww/scripts/redshift toggle"
+                  :active "${redshift_state == 'on' ? true : false}"
+                  :label "Night Light")
+      )
+    )
+    )
+  )
+
+(defwidget music []
+    (box :class "bolt-music-player-container" :orientation "v" :space-evenly "false"
+      (box :class "bolt-music-player-box" :hexpand "false" :vexpand "false" :space-evenly "false"
+        (box :class "bolt-music-player-album" :space-evenly "false" :style "background-image: radial-gradient(
+          circle farthest-side at left,
+           rgba(0, 0, 0, 0.0) 0%), url('${COVER}');")
+        (box :class "bolt-music-player-info-box" :space-evenly "true" :orientation "v"
+          (box :class "bolt-music-player-info" :space-evenly "false" :halign "start" :orientation "v"
+            (box :class "bolt-music-player-name-box" :space-evenly "false"
+))
+          (box :class "bolt-music-player-info-more-box" :orientation "v" :space-evenly "false"
+            (label :class "bolt-music-player-title" :orientation "v" :valign "start" :limit-width 25 :text song)
+            (label :class "bolt-music-player-artist" :halign "start" :limit-width 20 :text artist))))
+      (box :class "bolt-player-buttons-box" :halign "center" :spacing 20 :space-evenly "true"                                      
+        (button :class "player-prev" :onclick "mpc previus" "")
+        (button :class "player-pp" :onclick "mpc toggle" "${playpause}")
+        (button :class "player-next" :onclick "mpc next" ""))))
+
+(defwidget _boltuptime [label uptime]
+  (box :space-evenly false 
+       :class "bolt-uptime-box" 
+       :spacing 8 
+       :halign "start"
+    (label :text "" 
+           :class "bolt-uptime-hl")
+    (box :valign "center" 
+         :orientation "vertical" 
+         :class "bolt-uptime-label-value" 
+         :space-evenly false
+      (label :halign "start" 
+             :class "bolt-uptime-label" 
+             :text label)
+      (label :limit-width 15 
+             :halign "start" 
+             :class "bolt-uptime-value" 
+             :text uptime))))
+
+(defwidget netspeed []
+  (box :space-evenly false 
+       :class "bolt-net-box" 
+       :spacing 8
+       :width 225  
+       :halign "center"
+    (image  :path "${download}" :image-width  70
+           :class "bolt-net-hl")
+    (box :valign "center" 
+         :orientation "vertical" 
+         :class "bolt-uptime-label-value" 
+         :space-evenly false
+      (label :halign "center" 
+             :class "bolt-net-up" 
+             :text {round(EWW_NET.wlp2s0.NET_UP / (1024 * 1024) ,1)})
+      (label :limit-width 15 
+             :halign "start" 
+             :class "bolt-net-down" 
+             :text {round(EWW_NET.wlp2s0.NET_DOWN / 1024 ,1)}))))            
+             

@@ -1,0 +1,13 @@
+2024/11/03-22:14:40.741 13855 Reusing MANIFEST /home/zaryu/.config/chromium/Default/WebStorage/6/IndexedDB/indexeddb.leveldb/MANIFEST-000001
+2024/11/03-22:14:40.741 13855 Recovering log #68
+2024/11/03-22:14:40.747 13855 Reusing old log /home/zaryu/.config/chromium/Default/WebStorage/6/IndexedDB/indexeddb.leveldb/000068.log 
+2024/11/03-22:14:40.823 13856 Level-0 table #72: started
+2024/11/03-22:14:40.830 13856 Level-0 table #72: 7130 bytes OK
+2024/11/03-22:14:40.837 13856 Delete type=0 #68
+2024/11/03-22:14:40.841 13854 Manual compaction at level-0 from '\x00\x15\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x16\x00\x00\x00' @ 0 : 0; will stop at '\x00\x15\x01\x1f\x04\x03\x01\x03\x00N\x00E\x00W\x03\x00\x00\x00\x00\x00\x00L@\x03\x00\xf0l/\xc3-yB\x00\x03\x00\x00\x00\x00\x00\x00\x00@' @ 3175 : 1
+2024/11/03-22:14:40.841 13854 Compacting 1@0 + 1@1 files
+2024/11/03-22:14:40.846 13854 Generated table #73@0: 85 keys, 1419 bytes
+2024/11/03-22:14:40.846 13854 Compacted 1@0 + 1@1 files => 1419 bytes
+2024/11/03-22:14:40.851 13854 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/11/03-22:14:40.852 13854 Delete type=2 #72
+2024/11/03-22:14:40.853 13854 Manual compaction at level-0 from '\x00\x15\x01\x1f\x04\x03\x01\x03\x00N\x00E\x00W\x03\x00\x00\x00\x00\x00\x00L@\x03\x00\xf0l/\xc3-yB\x00\x03\x00\x00\x00\x00\x00\x00\x00@' @ 3175 : 1 .. '\x00\x16\x00\x00\x00' @ 0 : 0; will stop at (end)

@@ -1,0 +1,29 @@
+2024/10/26-21:53:26.964 200f Reusing MANIFEST /home/zaryu/.config/chromium/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/10/26-21:53:26.966 200f Recovering log #616
+2024/10/26-21:53:27.012 200f Reusing old log /home/zaryu/.config/chromium/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000616.log 
+2024/10/26-21:53:29.489 200f Level-0 table #629: started
+2024/10/26-21:53:29.537 200f Level-0 table #629: 481356 bytes OK
+2024/10/26-21:53:29.542 200f Delete type=0 #616
+2024/10/26-21:53:29.545 200e Manual compaction at level-0 from '\x002\x00\x00\x00' @ 72057594037927935 : 1 .. '\x003\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/10/26-21:53:30.171 201c Compacting 1@1 + 9@2 files
+2024/10/26-21:53:30.433 201c Generated table #630@1: 49095 keys, 2217679 bytes
+2024/10/26-21:53:30.559 201c Generated table #631@1: 12174 keys, 2164777 bytes
+2024/10/26-21:53:30.612 201c Generated table #632@1: 433 keys, 2127514 bytes
+2024/10/26-21:53:30.692 201c Generated table #633@1: 1152 keys, 2138090 bytes
+2024/10/26-21:53:30.958 201c Generated table #634@1: 17709 keys, 2224714 bytes
+2024/10/26-21:53:31.269 201c Generated table #635@1: 22045 keys, 2182776 bytes
+2024/10/26-21:53:31.612 201c Generated table #636@1: 62254 keys, 2199754 bytes
+2024/10/26-21:53:31.895 201c Generated table #637@1: 100820 keys, 2253141 bytes
+2024/10/26-21:53:32.027 201c Generated table #638@1: 46533 keys, 1049689 bytes
+2024/10/26-21:53:32.028 201c Compacted 1@1 + 9@2 files => 18558134 bytes
+2024/10/26-21:53:32.034 201c compacted to: files[ 0 0 9 0 0 0 0 ]
+2024/10/26-21:53:32.035 201c Delete type=2 #619
+2024/10/26-21:53:32.036 201c Delete type=2 #624
+2024/10/26-21:53:32.036 201c Delete type=2 #618
+2024/10/26-21:53:32.036 201c Delete type=2 #626
+2024/10/26-21:53:32.036 201c Delete type=2 #629
+2024/10/26-21:53:32.036 201c Delete type=2 #621
+2024/10/26-21:53:32.037 201c Delete type=2 #625
+2024/10/26-21:53:32.037 201c Delete type=2 #622
+2024/10/26-21:53:32.037 201c Delete type=2 #623
+2024/10/26-21:53:32.037 201c Delete type=2 #620

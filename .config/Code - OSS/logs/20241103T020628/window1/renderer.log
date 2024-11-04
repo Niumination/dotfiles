@@ -1,0 +1,4 @@
+2024-11-03 02:06:31.223 [warning] Creation of workbench contribution 'workbench.contrib.preferencesActions' took 23ms.
+2024-11-03 02:06:32.763 [info] Started local extension host with pid 30222.
+2024-11-03 02:06:37.832 [warning] [mainThreadStorage] large extension state detected (extensionId: sourcegraph.cody-ai, global: true): 1742.8984375kb. Consider to use 'storageUri' or 'globalStorageUri' to store this data on disk instead.
+2024-11-03 02:06:39.203 [info] [perf] Render performance baseline is 96ms

@@ -1,0 +1,9 @@
+2024/11/04-13:52:37.203 4 Reusing MANIFEST /home/zaryu/.config/chromium/Default/Local Storage/leveldb/MANIFEST-000001
+2024/11/04-13:52:37.237 4 Recovering log #190
+2024/11/04-13:52:37.246 4 Reusing old log /home/zaryu/.config/chromium/Default/Local Storage/leveldb/000190.log 
+2024/11/04-13:53:00.382 5 Level-0 table #195: started
+2024/11/04-13:53:00.395 5 Level-0 table #195: 33879 bytes OK
+2024/11/04-13:53:00.411 5 Delete type=0 #190
+2024/11/04-14:03:23.333 5 Level-0 table #197: started
+2024/11/04-14:03:23.340 5 Level-0 table #197: 61516 bytes OK
+2024/11/04-14:03:23.349 5 Delete type=0 #194

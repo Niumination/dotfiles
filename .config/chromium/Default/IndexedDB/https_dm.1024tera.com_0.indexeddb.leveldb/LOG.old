@@ -1,0 +1,14 @@
+2024/10/21-11:46:58.350 9f9 Reusing MANIFEST /home/zaryu/.config/chromium/Default/IndexedDB/https_dm.1024tera.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/10/21-11:46:58.351 9f9 Recovering log #69
+2024/10/21-11:46:58.352 9f9 Reusing old log /home/zaryu/.config/chromium/Default/IndexedDB/https_dm.1024tera.com_0.indexeddb.leveldb/000069.log 
+2024/10/21-11:46:58.353 9f9 Delete type=2 #67
+2024/10/21-11:46:58.422 9fb Level-0 table #74: started
+2024/10/21-11:46:58.440 9fb Level-0 table #74: 3919 bytes OK
+2024/10/21-11:46:58.450 9fb Delete type=0 #69
+2024/10/21-11:46:58.452 9f9 Manual compaction at level-0 from '\x00\x16\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x17\x00\x00\x00' @ 0 : 0; will stop at '\x00\x16\x00\x00\x05' @ 2222 : 1
+2024/10/21-11:46:58.453 9f9 Compacting 1@0 + 1@1 files
+2024/10/21-11:46:58.462 9f9 Generated table #75@0: 284 keys, 5478 bytes
+2024/10/21-11:46:58.464 9f9 Compacted 1@0 + 1@1 files => 5478 bytes
+2024/10/21-11:46:58.472 9f9 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/10/21-11:46:58.474 9f9 Delete type=2 #74
+2024/10/21-11:46:58.476 9f9 Manual compaction at level-0 from '\x00\x16\x00\x00\x05' @ 2222 : 1 .. '\x00\x17\x00\x00\x00' @ 0 : 0; will stop at (end)

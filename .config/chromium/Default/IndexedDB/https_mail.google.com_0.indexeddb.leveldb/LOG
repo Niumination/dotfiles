@@ -1,0 +1,6 @@
+2024/10/28-15:05:18.416 724 Reusing MANIFEST /home/zaryu/.config/chromium/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/10/28-15:05:18.420 724 Recovering log #3
+2024/10/28-15:05:18.422 724 Reusing old log /home/zaryu/.config/chromium/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000003.log 
+2024/10/28-15:08:53.955 723 Level-0 table #5: started
+2024/10/28-15:08:54.083 723 Level-0 table #5: 2960521 bytes OK
+2024/10/28-15:08:54.089 723 Delete type=0 #3
