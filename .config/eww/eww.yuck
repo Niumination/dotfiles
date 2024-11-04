@@ -1,0 +1,302 @@
+(include "/home/zaryu/.config/eww/modules.yuck")
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;; TRANSPARENT BAR TO HIDE UNHIDE SIDEBAR ;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defwidget transparent[]
+    (box :orientation "vertical"
+       :space-evenly true
+       :class "toggle-bar"
+    (box :space-evenly true :orientation "vertical" :spacing 0
+      (eventbox :onhover "eww update vertigo_revealnd=true"
+                :onhoverlost "eww update vertigo_revealnd=false"
+        (box :space-evenly true :orientation "vertical" :class ""
+          (_revealnd :revealon vertigo_revealnd :config vertigo_config))))
+    (eventbox :onhover "eww update vertigo_revealex=true"
+              :onhoverlost "eww open --toggle bar"
+      (box :space-evenly true :orientation "vertical"
+        (_revealex :revealon vertigo_revealex)))))      
+          
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;; WIDGET  SIDEBAR ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;         
+
+
+(defwidget left []
+  (box :class "layout-box-transparent" :orientation "vertical" :space-evenly false :halign "center" :spacing 0 
+  (button-align)))
+
+(defwidget center []
+  (box :class "layout-box-transparent" :orientation "vertical" :space-evenly false :halign "center" :spacing 30 
+  (tags)
+  (sep)
+  (style)
+)) 
+    
+(defwidget right []
+  (box :class "layout-box transparent" :orientation "vertical" :space-evenly false :halign "center" :spacing 0
+       (_profile :M "eww update vertigo_revealex=${!vertigo_revealex}"
+                  :L "eww open --toggle bolt"
+                  :path profile
+                  :image-class "bar-profile-image"
+                  :button-class "bar-profile-button"
+                  :size "40"
+                  :tooltip "")))
+                  
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;; PERSONAL_PANEL, SETTINGS_PANEL, CONTROL_PANEL ;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;                 
+
+(defwidget panel[]
+  (box :spacing "0" :class "background" :orientation "v" :width "200" :height "500" :space-evenly "false"
+    (_brand :path "./assets/brand.png"
+              :size 30
+              :tooltip ""
+              :button-class "origin-brand-button"
+              :image-class "origin-profile-image")
+    (box :valign "start" :orientation "horizontal" :space-evenly false :class "origin-layout-box"
+      (label :halign "start" :class "brand-greet" :text "${hostname}"))
+    (panel-switch)
+    (overlay
+      (box :width "200" :height "560")
+      (box :class "s${cPanel}${animatePanel}"
+        (setting-panel))
+      (box :class "c${cPanel}${animatePanel}"
+        (control-panel)))
+))
+
+(defwidget control-panel[]
+  (box :orientation "vertical" :class "background" :space-evenly "false" :width "232" :halign "center"
+       (left-wide)
+    (center-wide)
+   (right-wide)
+))
+
+(defwidget setting-panel[]
+  (box :width "200"
+  :class "background-setting-panel" 
+  :orientation "v" 
+  :space-evenly "false"
+  (_ptime :hour {time.hour} :minute {time.min} :secs {time.sec} :uptime uptime)
+  (_wifi :label "WiFi" 
+  :icon  {net == "" ? network_icon : net < 26 ? "" : net < 51 ? "" : net < 76 ? "" : ""} 
+   :ssid network_status)
+  (controls)
+  (_fluidbat :class {EWW_BATTERY.CMB1.capacity > 95 ? "bolt-bat-full" :
+ EWW_BATTERY.CMB1.capacity > 50 ? "bolt-bat-norm" :
+ EWW_BATTERY.CMB1.capacity > 20 ? "bolt-bat-warn" : "bolt-bat-crit"} 
+                   :label "Battery" 
+                   :icon_full "" 
+                   :icon_norm "${battery_icon}" 
+                   :icon_crit "")      
+  (weather)
+ ))
+
+(defwidget bar-wide []
+  (box :class "layout-wide-box" :orientation "v" :space-evenly false
+  (box :space-evenly false :orientation "vertical" :spacing 30
+  (eventbox :onhover "eww update vertigo_revealnd=true" :onhoverlost "eww update vertigo_revealnd=false"
+  (box :space-evenly false :orientation "vertical" :class "")))     
+    (left-wide)
+    (center-wide)
+   (right-wide)
+  )
+)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;SIDEBAR TABS WIDGETS;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; 
+
+(defwidget left-wide []
+  (box :class "left" :orientation "v" :space-evenly false :halign "start" :spacing 0))
+
+(defwidget center-wide []
+  (box :class "center" :orientation "v" :space-evenly false :halign "start" :spacing 0
+     (charts2)
+     (cover)
+     (mpd-btn)
+            (_mpdx :repeatc {mpd_sub.x.repeat == "1" ? "ava-mpdx-repeat-on" : "ava-mpdx-repeat-off"}
+               :randomc {mpd_sub.x.random == "1" ? "ava-mpdx-random-on" : "ava-mpdx-random-off"}
+               :singlec {mpd_sub.x.single == "1" ? "ava-mpdx-single-on" : "ava-mpdx-single-off"}
+               :consumec {mpd_sub.x.consume == "1" ? "ava-mpdx-consume-on" : "ava-mpdx-consume-off"}
+               :xfadec {mpd_sub.x.xfade == "0" ? "ava-mpdx-xfade-off" : "ava-mpdx-xfade-on"}
+               :repeatlbl ""
+               :randomlbl ""
+               :singlelbl ""
+               :consumelbl ""
+               :xfadelbl ""
+               :shufflelbl ""
+               :shufflecmd "mpc shuffle"
+               :randomcmd "mpc random"
+               :repeatcmd "mpc repeat"
+               :singlecmd "mpc single"
+               :consumecmd "mpc consume"
+               :xfadecmd {mpd_sub.x.xfade == "0" ? "mpc crossfade 2" : "mpc crossfade 0"})
+     (darktoggle)     
+  ))
+
+(defwidget right-wide []
+  (box :class "right" :orientation "v" :space-evenly false :halign "start" :spacing 0;
+(_profilewide :path "./assets/uiface2.png"
+              :size 40
+              :tooltip "profile"
+              :button-class "origin-profile-button"
+              :image-class "origin-profile-image")
+    (box :valign "start" :orientation "vertical" :space-evenly false :class "origin-layout-box"
+      (label :halign "center" :class "origin-greet" :text "Hey, ${username}.")
+      (label :halign "center" :class "origin-hostname" :text "urielzpt@gmail.com"))))
+      
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;; BOLT EXTRA WIDGETS PANEL ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defwidget bolt_layout []
+  (box :space-evenly false
+       :class "bolt-layout-box"
+       :spacing 14
+       :orientation "vertical"
+    (box :hexpand true 
+         :space-evenly false 
+         :class "bolt-date-bat-pctl" 
+         :spacing 14
+(charts)
+      (box :orientation "vertical" 
+           :space-evenly false 
+           :class "bolt-date-bat" 
+           :spacing 14            
+(_boltwifi :label "Wifi" 
+           :icon  network_icon
+           :ssid network_ssid)
+   (charts1)))
+           (box :orientation "horizontal" 
+           :space-evenly true 
+           :class "bolt-date-bat" 
+           :spacing 14      
+ (sysbuttons)) 
+           (box :orientation "horizontal" 
+           :space-evenly true 
+           :class "bolt-date-bat" 
+           :spacing 14                  
+      (music))
+      (box :hexpand true 
+         :space-evenly false 
+         :class "bolt-uptime-wifi" 
+         :spacing 14
+(_boltuptime :label "Uptime" 
+             :uptime uptime)
+ (netspeed) ))) 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;,   WINDOWS PANELS ;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defwindow bar
+  :monitor 0
+  :windowtype "dock"
+  :stacking "fg"
+  :wm-ignore true
+  :geometry (geometry :x "12px" :y "0px" :width "77px" :height "90%" :anchor "left center")
+  :reserve (struts :distance "4%" :side "left")
+  (bar))
+  
+(defwindow bar-wide
+  :stacking "bg"
+  :windowtype "dock"
+  :wm-ignore true
+  :geometry (geometry :x "12px" :y "0px" :width "130px" :height "90%" :anchor "left center")
+  :reserve (struts :distance "2%" :side "left")
+(bar-wide))
+
+(defwindow control-panel :monitor 0 :wm-ignore true :focusable "true"
+  :geometry (geometry :x "46" :y "6" :height "90%" :width "150" :anchor "left center")
+  (control-panel))
+
+(defwindow setting-panel :monitor 0 :wm-ignore true :focusable "true"
+  :geometry (geometry :x "46" :y "6" :height "90%" :width "150" :anchor "left center")
+  (setting-panel))
+  
+(defwindow panel :monitor 0 :wm-ignore true :focusable "true"
+  :geometry (geometry :x "12" :y "0" :height "90%" :width "150" :anchor "left center")
+  (panel))
+  
+(defwindow transparent 
+   :stacking "fg"
+   :windowtype "dock"  
+   :wm-ignore true 
+   :focusable "true"
+  :geometry (geometry :x "-7" :y "0" :height "25%" :width "10px" :anchor "left center")
+  :reserve (struts :distance "4%" :side "left") 
+  (transparent))  
+  
+(defwindow bolt :stacking "bg"
+  :windowtype "dock"
+  :wm-ignore true
+  :geometry (geometry :x 100 :y -35 :width "23%" :height "30%" :anchor "left bottom") 
+  (bolt_layout))  
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;; DEFINITIONS ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(defvar cPanel 0)
+(defvar animatePanel 0)
+(defvar vertigo_revealnd false)
+(defvar vertigo_revealex false)
+(defpoll vertigo_config :interval "5000h" :run-while false "cat ewwrc")
+(defvar button "./assets/align.png")
+(defvar button-light "./assets/align-dark.png")
+(deflisten tags "./scripts/getWorkspaces")
+(deflisten tags2 "./scripts/getWorkspaces2")
+(defvar profile "./assets/uiface2.png")
+(defpoll username :interval "1000s" "echo $USER")
+(defpoll hostname :interval "1000s" "hostnamectl hostname")
+
+(defpoll battery_status :interval "1s" "cat /sys/class/power_supply/CMB1/device/power_supply/CMB1/status")
+(defpoll battery :interval "1s" "./scripts/getBattery percent")
+
+(defpoll network_icon :interval "3s" "./scripts/network.sh icon")
+(defpoll network_class :interval "3s" "./scripts/network.sh class")
+(defpoll network_name :interval "3s" "./scripts/network.sh name")
+(defpoll network_status :interval "1s" "~/.config/eww/scripts/network.sh status")
+(defpoll network_radio :interval "1s" "~/.config/eww/scripts/network.sh radio-status")
+(defpoll network_ssid :interval "1s" "~/.config/eww/scripts/network.sh ssid")
+
+(defpoll volume :interval "1s" "./scripts/getVolume percentage")
+(defpoll is_muted :interval "1s" "~/.config/eww/scripts/volume.sh muted")
+(defpoll redshift_state :interval "1s" "~/.config/eww/scripts/redshift state")
+
+(defpoll volume_icon :interval "1s" "./scripts/getVolume icon")
+(defpoll volume_value :interval "1s" "./scripts/getVolume vol")
+(defpoll mpd_progress :interval "1s" `mpc | grep "%)" | awk '{print $4}' | tr -d '(%)'`)
+(defpoll hour :interval "1s" `date +%I:%M`)
+(defpoll cpu :interval "3s" "./scripts/cpu.sh")
+(defpoll ram :interval "3s" "./scripts/getRam ram")
+(defpoll temp :interval "3s" "./scripts/sysinfo temp")
+(defpoll player-icon :interval "1s" "./scripts/music-info --icon")
+(defpoll player-name :interval "1s" "./scripts/music-art --player-name")
+(defpoll COVER :interval "1s" `./scripts/music_info --cover`)
+(defpoll song :interval "1s" "mpc current")
+(defpoll songtime :interval "1s" "./scripts/getSongDuration")
+(defpoll mpd_current :interval "1s" `mpc | grep "#" | awk '{print $3}' | sed 's|/.*||g'`)
+(defpoll mpd_duration :interval "10s" `mpc --format=%time% current`)
+(deflisten mpd_sub "python ./src/shell/mpdaemon.py")
+(defpoll artist :interval "1s" "mpc --format '%artist%' current || true")
+(defpoll playpause :interval "1s" "./scripts/isPlaying")
+
+(defpoll mpd_level :interval "0.3s" `mpc volume 2>/dev/stdout | awk -F: '{gsub("%| ", "", $2); print $2}'`)
+(defpoll ram2 :interval "3s" "./scripts/getRam ram")
+(defpoll weather :interval "1h" "python ~/.config/eww/scripts/weather.py")
+(defpoll weather2 :interval "1h" "python ~/.config/eww/scripts/weather2.py")
+(defpoll battery_icon :interval "1s" "./scripts/getBattery icon")
+
+(defpoll date :interval "60s" `date "+%H:%M %P"`)
+(defpoll calendar_day :interval "10h" "date '+%d'")
+(defpoll calendar_month :interval "10h" "./scripts/getCalendarMonth")
+(defpoll calendar_year :interval "10h" "date '+%Y'")
+(defvar bg      "rgba(26, 27, 38, 0.8)")
+
+(deflisten notificationsCards "./scripts/logger.zsh subscribe")
+(defpoll notificationsCrits :interval "1s" "./scripts/logger.zsh crits")
+(defpoll notificationNum :interval "1s" "./scripts/logger.zsh tot")
+(defpoll bat :interval "10s"  "./scrips/getBattery percent")
+
+(defpoll time :interval "1s" `date +'{"hour":"%H","min":"%M","sec":"%S","pretty":"%a, %e %b","day":"%A","month":"%B","dom":"%e","year":"%Y","day_num":"%d","month_num":"%m","year_num":"%y"}'`)
+(defpoll uptime :interval "48h" "uptime --pretty | ./scripts/uptime.awk")
+(defpoll net :interval "100s" `nmcli -terse -fields SIGNAL,ACTIVE device wifi | awk --field-separator ':' '{if($2=="yes")print$1}'`)
+(defpoll ssid :interval "100s" `nmcli -terse -fields SSID,ACTIVE device wifi | awk --field-separator ':' '{if($2=="yes")print$1}'`)
+(defvar download "./assets/Download2.png")

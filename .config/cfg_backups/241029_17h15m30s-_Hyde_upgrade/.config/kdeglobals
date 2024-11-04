@@ -1,0 +1,8 @@
+[General]
+TerminalApplication=kitty
+
+[Icons]
+Theme=Papirus-kanagawa
+
+[KShortcutsDialog Settings]
+Dialog Size=600,480
