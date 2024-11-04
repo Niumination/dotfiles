@@ -1,9 +1,0 @@
-2024/10/30-13:52:45.821 1103 Reusing MANIFEST /home/zaryu/.config/chromium/Default/WebStorage/6/IndexedDB/indexeddb.leveldb/MANIFEST-000001
-2024/10/30-13:52:45.822 1103 Recovering log #64
-2024/10/30-13:52:45.827 1103 Reusing old log /home/zaryu/.config/chromium/Default/WebStorage/6/IndexedDB/indexeddb.leveldb/000064.log 
-2024/10/30-13:52:45.828 1103 Delete type=2 #62
-2024/10/30-13:52:45.828 1103 Delete type=2 #65
-2024/10/30-13:52:45.890 1104 Level-0 table #69: started
-2024/10/30-13:52:45.898 1104 Level-0 table #69: 41216 bytes OK
-2024/10/30-13:52:45.902 1104 Delete type=0 #64
-2024/10/30-13:52:45.906 1103 Manual compaction at level-0 from '\x00\x14\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x15\x00\x00\x00' @ 0 : 0; will stop at (end)
