@@ -1,48 +1,22 @@
 [pyprland]
 plugins = [
-  "scratchpads",
-  "lost_windows",
-  "monitors",
-  "toggle_dpms",
-  "magnify",
-  "expose",
-  "shift_monitors",
-  "workspaces_follow_focus",
+ "expose",
+ "fetch_client_menu",
+ "lost_windows",
+ "magnify",
+ "scratchpads",
+ "shift_monitors",
+ "toggle_special",
+ "workspaces_follow_focus",
 ]
 
-[monitors.placement]
-"Acer".top_center_of = "Sony"
-
-[workspaces_follow_focus]
-max_workspaces = 9
-
-[expose]
-include_special = false
-
-[scratchpads.stb]
-animation = "fromBottom"
-command = "kitty --class kitty-stb sstb"
-class = "kitty-stb"
-lazy = true
-size = "75% 45%"
-
-[scratchpads.stb-logs]
-animation = "fromTop"
-command = "kitty --class kitty-stb-logs stbLog"
-class = "kitty-stb-logs"
-lazy = true
-size = "75% 40%"
+# using variables for demonstration purposes (not needed)
+[pyprland.variables]
+term_classed = "kitty --class"
 
 [scratchpads.term]
 animation = "fromTop"
-command = "kitty --class kitty"
-class = "kitty"
-size = "90% 80%"
-
-[scratchpads.volume]
-animation = "fromRight"
-command = "pavucontrol"
-class = "org.pulseaudio.pavucontrol"
-lazy = true
-size = "40% 90%"
-unfocus = "hide"
+command = "[term_classed] main-dropterm"
+class = "main-dropterm"
+size = "75% 60%"
+max_size = "1366px 100%"
