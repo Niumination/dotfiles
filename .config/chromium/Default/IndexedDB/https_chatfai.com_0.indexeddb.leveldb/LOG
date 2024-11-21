@@ -1,6 +1,0 @@
-2024/11/14-11:15:52.664 a32 Creating DB /home/zaryu/.config/chromium/Default/IndexedDB/https_chatfai.com_0.indexeddb.leveldb since it was missing.
-2024/11/14-11:15:52.673 a32 Reusing MANIFEST /home/zaryu/.config/chromium/Default/IndexedDB/https_chatfai.com_0.indexeddb.leveldb/MANIFEST-000001
-2024/11/14-11:15:52.706 a34 Level-0 table #5: started
-2024/11/14-11:15:52.713 a34 Level-0 table #5: 1263 bytes OK
-2024/11/14-11:15:52.723 a34 Delete type=0 #3
-2024/11/14-11:15:52.726 a40 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

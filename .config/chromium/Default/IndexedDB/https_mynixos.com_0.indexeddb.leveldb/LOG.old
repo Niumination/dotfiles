@@ -1,7 +1,0 @@
-2024/11/15-00:24:35.395 62b5 Reusing MANIFEST /home/zaryu/.config/chromium/Default/IndexedDB/https_mynixos.com_0.indexeddb.leveldb/MANIFEST-000001
-2024/11/15-00:24:35.395 62b5 Recovering log #48
-2024/11/15-00:24:35.396 62b5 Reusing old log /home/zaryu/.config/chromium/Default/IndexedDB/https_mynixos.com_0.indexeddb.leveldb/000048.log 
-2024/11/15-00:24:36.133 62b7 Level-0 table #53: started
-2024/11/15-00:24:36.137 62b7 Level-0 table #53: 6238 bytes OK
-2024/11/15-00:24:36.140 62b7 Delete type=0 #48
-2024/11/15-00:24:36.141 62b7 Manual compaction at level-0 from '\x00\x10\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x11\x00\x00\x00' @ 0 : 0; will stop at (end)
