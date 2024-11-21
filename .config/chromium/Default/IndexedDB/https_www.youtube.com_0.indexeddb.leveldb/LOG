@@ -1,0 +1,6 @@
+2024/11/20-11:28:03.926 175e Reusing MANIFEST /home/zaryu/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/11/20-11:28:03.927 175e Recovering log #212
+2024/11/20-11:28:03.966 175e Reusing old log /home/zaryu/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000212.log 
+2024/11/20-11:35:53.233 175f Level-0 table #217: started
+2024/11/20-11:35:53.294 175f Level-0 table #217: 1606241 bytes OK
+2024/11/20-11:35:53.298 175f Delete type=0 #212

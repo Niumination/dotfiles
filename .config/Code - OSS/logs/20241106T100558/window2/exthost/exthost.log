@@ -1,0 +1,235 @@
+2024-11-06 10:06:07.788 [info] Extension host with pid 2094 started
+2024-11-06 10:06:07.788 [info] Skipping acquiring lock for /home/zaryu/.config/Code - OSS/User/workspaceStorage/d44bf2d907bc93543810dba3d363c3b3.
+2024-11-06 10:06:10.244 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-11-06 10:06:10.400 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-11-06 10:06:10.854 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-11-06 10:06:11.238 [info] Eager extensions activated
+2024-11-06 10:06:11.601 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-11-06 10:06:11.618 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-11-06 10:06:11.749 [info] ExtensionService#_doActivateExtension sourcegraph.cody-ai, startup: false, activationEvent: 'onStartupFinished'
+2024-11-06 10:06:15.209 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-11-06 10:06:26.140 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-11-06 10:06:26.188 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-11-06 10:06:26.424 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-11-06 10:08:34.732 [info] ExtensionService#_doActivateExtension mkhl.direnv, startup: false, activationEvent: '*'
+2024-11-06 10:08:34.750 [info] ExtensionService#_doActivateExtension jnoortheen.nix-ide, startup: false, activationEvent: 'onStartupFinished'
+2024-11-06 10:08:34.986 [info] ExtensionService#_doActivateExtension arrterian.nix-env-selector, startup: false, activationEvent: '*'
+2024-11-06 10:08:36.284 [error] TypeError: c.call is not a function
+	at /home/zaryu/.vscode-oss/extensions/arrterian.nix-env-selector-1.0.11-universal/dist/main.js:2538:310
+2024-11-06 10:14:30.056 [info] Extension host terminating: renderer closed the MessagePort
+2024-11-06 10:14:30.147 [error] TypeError: Cannot read properties of undefined (reading 'dispose')
+	at _d (/home/zaryu/.vscode-oss/extensions/jnoortheen.nix-ide-0.3.5-universal/dist/extension.js:44:45688)
+	at Object.Fw (/home/zaryu/.vscode-oss/extensions/jnoortheen.nix-ide-0.3.5-universal/dist/extension.js:44:46543)
+	at z_.eb (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:11724)
+	at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:9874
+	at Array.map (<anonymous>)
+	at z_.$ (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:9862)
+	at z_.terminate (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:10105)
+	at EC.terminate (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:119:1424)
+	at Zi (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:15063)
+	at MessagePortMain.<anonymous> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:11611)
+	at MessagePortMain.emit (node:events:519:28)
+	at MessagePortMain.emit (node:domain:488:12)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+	at Object.topLevelDomainCallback (node:domain:160:15)
+	at Object.callbackTrampoline (node:internal/async_hooks:128:24)
+2024-11-06 10:14:30.151 [error] Canceled: Canceled
+	at new tT (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:108738)
+	at py.U (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:113348)
+	at s.<computed>.n.charCodeAt.s.<computed> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:110842)
+	at Y0.g (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:32313)
+	at Y0.executeCommand (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:31817)
+	at r.registerCommand.description (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:31147)
+	at Y0.h (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:32833)
+	at Y0.g (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:31910)
+	at Y0.executeCommand (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:31817)
+	at Object.executeCommand (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:156:37246)
+	at mh.O [as value] (/usr/lib/code/extensions/git/dist/main.js:2:961845)
+	at D.B (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:746)
+	at D.C (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:816)
+	at D.fire (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:1033)
+	at Object.p [as dispose] (/usr/lib/code/extensions/git/dist/main.js:2:983333)
+	at /usr/lib/code/extensions/git/dist/main.js:2:989455
+	at Array.forEach (<anonymous>)
+	at b.dispose (/usr/lib/code/extensions/git/dist/main.js:2:989441)
+	at V1.<anonymous> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:108:19994)
+	at V1.dispose (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:108:20090)
+	at V1.<anonymous> (/usr/lib/code/extensions/git/dist/main.js:2:964255)
+	at V1.dispose (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:108:20090)
+	at ci (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:24:699)
+	at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:14992
+	at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:24:1009
+	at Object.dispose (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:7:2146)
+	at z_.eb (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:11919)
+	at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:9874
+	at Array.map (<anonymous>)
+	at z_.$ (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:9862)
+	at z_.terminate (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:10105)
+	at EC.terminate (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:119:1424)
+	at Zi (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:15063)
+	at MessagePortMain.<anonymous> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:11611)
+	at MessagePortMain.emit (node:events:519:28)
+	at MessagePortMain.emit (node:domain:488:12)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+	at Object.topLevelDomainCallback (node:domain:160:15)
+	at Object.callbackTrampoline (node:internal/async_hooks:128:24) setContext undefined
+2024-11-06 10:14:30.153 [error] Canceled: Canceled
+	at new tT (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:108738)
+	at py.U (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:113348)
+	at s.<computed>.n.charCodeAt.s.<computed> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:110842)
+	at Y0.g (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:32313)
+	at Y0.executeCommand (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:31817)
+	at r.registerCommand.description (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:31147)
+	at Y0.h (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:32833)
+	at Y0.g (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:31910)
+	at Y0.executeCommand (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:31817)
+	at Object.executeCommand (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:156:37246)
+	at set hasGitHubRepositories (/usr/lib/code/extensions/github/dist/extension.js:2:328633)
+	at /usr/lib/code/extensions/github/dist/extension.js:2:329592
+	at mh.value (/usr/lib/code/extensions/git/dist/main.js:2:1073936)
+	at D.B (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:746)
+	at D.C (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:816)
+	at D.fire (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:1033)
+	at Object.p [as dispose] (/usr/lib/code/extensions/git/dist/main.js:2:983333)
+	at /usr/lib/code/extensions/git/dist/main.js:2:989455
+	at Array.forEach (<anonymous>)
+	at b.dispose (/usr/lib/code/extensions/git/dist/main.js:2:989441)
+	at V1.<anonymous> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:108:19994)
+	at V1.dispose (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:108:20090)
+	at V1.<anonymous> (/usr/lib/code/extensions/git/dist/main.js:2:964255)
+	at V1.dispose (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:108:20090)
+	at ci (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:24:699)
+	at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:14992
+	at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:24:1009
+	at Object.dispose (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:7:2146)
+	at z_.eb (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:11919)
+	at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:9874
+	at Array.map (<anonymous>)
+	at z_.$ (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:9862)
+	at z_.terminate (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:10105)
+	at EC.terminate (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:119:1424)
+	at Zi (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:15063)
+	at MessagePortMain.<anonymous> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:11611)
+	at MessagePortMain.emit (node:events:519:28)
+	at MessagePortMain.emit (node:domain:488:12)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+	at Object.topLevelDomainCallback (node:domain:160:15)
+	at Object.callbackTrampoline (node:internal/async_hooks:128:24) setContext undefined
+2024-11-06 10:14:30.241 [info] Extension host with pid 2094 exiting with code 0
+2024-11-06 10:14:32.119 [info] Extension host with pid 2782 started
+2024-11-06 10:14:32.119 [info] Skipping acquiring lock for /home/zaryu/.config/Code - OSS/User/workspaceStorage/d44bf2d907bc93543810dba3d363c3b3.
+2024-11-06 10:14:32.159 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-11-06 10:14:32.236 [info] ExtensionService#_doActivateExtension sourcegraph.cody-ai, startup: false, activationEvent: 'onLanguage'
+2024-11-06 10:14:34.281 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-11-06 10:14:34.321 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-11-06 10:14:34.547 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-11-06 10:14:34.758 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: 'onFileSystem:git', root cause: vscode.git
+2024-11-06 10:14:35.256 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'onFileSystem:git'
+2024-11-06 10:14:35.525 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-11-06 10:14:36.109 [info] Eager extensions activated
+2024-11-06 10:14:36.788 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-11-06 10:14:36.803 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-11-06 10:14:43.881 [info] ExtensionService#_doActivateExtension jnoortheen.nix-ide, startup: false, activationEvent: 'onStartupFinished'
+2024-11-06 10:16:30.638 [info] ExtensionService#_doActivateExtension arrterian.nix-env-selector, startup: false, activationEvent: '*'
+2024-11-06 10:16:31.867 [error] TypeError: c.call is not a function
+	at /home/zaryu/.vscode-oss/extensions/arrterian.nix-env-selector-1.0.11-universal/dist/main.js:2538:310
+2024-11-06 13:39:20.452 [info] Extension host terminating: renderer closed the MessagePort
+2024-11-06 13:39:20.592 [error] TypeError: Cannot read properties of undefined (reading 'dispose')
+	at _d (/home/zaryu/.vscode-oss/extensions/jnoortheen.nix-ide-0.3.5-universal/dist/extension.js:44:45688)
+	at Object.Fw (/home/zaryu/.vscode-oss/extensions/jnoortheen.nix-ide-0.3.5-universal/dist/extension.js:44:46543)
+	at z_.eb (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:11724)
+	at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:9874
+	at Array.map (<anonymous>)
+	at z_.$ (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:9862)
+	at z_.terminate (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:10105)
+	at EC.terminate (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:119:1424)
+	at Zi (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:15063)
+	at MessagePortMain.<anonymous> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:11611)
+	at MessagePortMain.emit (node:events:519:28)
+	at MessagePortMain.emit (node:domain:488:12)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+	at Object.topLevelDomainCallback (node:domain:160:15)
+	at Object.callbackTrampoline (node:internal/async_hooks:128:24)
+2024-11-06 13:39:20.597 [error] Canceled: Canceled
+	at new tT (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:108738)
+	at py.U (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:113348)
+	at s.<computed>.n.charCodeAt.s.<computed> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:110842)
+	at Y0.g (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:32313)
+	at Y0.executeCommand (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:31817)
+	at r.registerCommand.description (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:31147)
+	at Y0.h (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:32833)
+	at Y0.g (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:31910)
+	at Y0.executeCommand (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:31817)
+	at Object.executeCommand (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:156:37246)
+	at mh.O [as value] (/usr/lib/code/extensions/git/dist/main.js:2:961845)
+	at D.B (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:746)
+	at D.C (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:816)
+	at D.fire (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:1033)
+	at Object.p [as dispose] (/usr/lib/code/extensions/git/dist/main.js:2:983333)
+	at /usr/lib/code/extensions/git/dist/main.js:2:989455
+	at Array.forEach (<anonymous>)
+	at b.dispose (/usr/lib/code/extensions/git/dist/main.js:2:989441)
+	at V1.<anonymous> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:108:19994)
+	at V1.dispose (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:108:20090)
+	at V1.<anonymous> (/usr/lib/code/extensions/git/dist/main.js:2:964255)
+	at V1.dispose (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:108:20090)
+	at ci (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:24:699)
+	at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:14992
+	at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:24:1009
+	at Object.dispose (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:7:2146)
+	at z_.eb (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:11919)
+	at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:9874
+	at Array.map (<anonymous>)
+	at z_.$ (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:9862)
+	at z_.terminate (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:10105)
+	at EC.terminate (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:119:1424)
+	at Zi (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:15063)
+	at MessagePortMain.<anonymous> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:11611)
+	at MessagePortMain.emit (node:events:519:28)
+	at MessagePortMain.emit (node:domain:488:12)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+	at Object.topLevelDomainCallback (node:domain:160:15)
+	at Object.callbackTrampoline (node:internal/async_hooks:128:24) setContext undefined
+2024-11-06 13:39:20.604 [error] Canceled: Canceled
+	at new tT (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:108738)
+	at py.U (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:113348)
+	at s.<computed>.n.charCodeAt.s.<computed> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:110842)
+	at Y0.g (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:32313)
+	at Y0.executeCommand (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:31817)
+	at r.registerCommand.description (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:31147)
+	at Y0.h (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:32833)
+	at Y0.g (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:31910)
+	at Y0.executeCommand (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:31817)
+	at Object.executeCommand (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:156:37246)
+	at set hasGitHubRepositories (/usr/lib/code/extensions/github/dist/extension.js:2:328633)
+	at /usr/lib/code/extensions/github/dist/extension.js:2:329592
+	at mh.value (/usr/lib/code/extensions/git/dist/main.js:2:1073936)
+	at D.B (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:746)
+	at D.C (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:816)
+	at D.fire (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:1033)
+	at Object.p [as dispose] (/usr/lib/code/extensions/git/dist/main.js:2:983333)
+	at /usr/lib/code/extensions/git/dist/main.js:2:989455
+	at Array.forEach (<anonymous>)
+	at b.dispose (/usr/lib/code/extensions/git/dist/main.js:2:989441)
+	at V1.<anonymous> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:108:19994)
+	at V1.dispose (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:108:20090)
+	at V1.<anonymous> (/usr/lib/code/extensions/git/dist/main.js:2:964255)
+	at V1.dispose (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:108:20090)
+	at ci (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:24:699)
+	at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:14992
+	at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:24:1009
+	at Object.dispose (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:7:2146)
+	at z_.eb (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:11919)
+	at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:9874
+	at Array.map (<anonymous>)
+	at z_.$ (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:9862)
+	at z_.terminate (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:10105)
+	at EC.terminate (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:119:1424)
+	at Zi (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:15063)
+	at MessagePortMain.<anonymous> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:11611)
+	at MessagePortMain.emit (node:events:519:28)
+	at MessagePortMain.emit (node:domain:488:12)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+	at Object.topLevelDomainCallback (node:domain:160:15)
+	at Object.callbackTrampoline (node:internal/async_hooks:128:24) setContext undefined
+2024-11-06 13:39:20.696 [info] Extension host with pid 2782 exiting with code 0

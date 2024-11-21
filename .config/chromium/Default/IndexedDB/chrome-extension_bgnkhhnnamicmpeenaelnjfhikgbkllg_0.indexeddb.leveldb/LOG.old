@@ -1,0 +1,14 @@
+2024/11/21-22:17:52.869 7dae Reusing MANIFEST /home/zaryu/.config/chromium/Default/IndexedDB/chrome-extension_bgnkhhnnamicmpeenaelnjfhikgbkllg_0.indexeddb.leveldb/MANIFEST-000001
+2024/11/21-22:17:52.871 7dae Recovering log #1966
+2024/11/21-22:17:52.872 7dae Reusing old log /home/zaryu/.config/chromium/Default/IndexedDB/chrome-extension_bgnkhhnnamicmpeenaelnjfhikgbkllg_0.indexeddb.leveldb/001966.log 
+2024/11/21-22:17:52.873 7dae Delete type=2 #1964
+2024/11/21-22:17:52.903 7db0 Level-0 table #1971: started
+2024/11/21-22:17:52.911 7db0 Level-0 table #1971: 217169 bytes OK
+2024/11/21-22:17:52.919 7db0 Delete type=0 #1966
+2024/11/21-22:17:52.920 7daf Manual compaction at level-0 from ' \xee\x01\x00\x00\x00' @ 72057594037927935 : 1 .. ' \xef\x01\x00\x00\x00' @ 0 : 0; will stop at ' \xee\x01\x00\x00\x05' @ 21753 : 1
+2024/11/21-22:17:52.921 7daf Compacting 1@0 + 1@1 files
+2024/11/21-22:17:52.933 7daf Generated table #1972@0: 85 keys, 216433 bytes
+2024/11/21-22:17:52.934 7daf Compacted 1@0 + 1@1 files => 216433 bytes
+2024/11/21-22:17:52.937 7daf compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/11/21-22:17:52.938 7daf Delete type=2 #1971
+2024/11/21-22:17:52.940 7daf Manual compaction at level-0 from ' \xee\x01\x00\x00\x05' @ 21753 : 1 .. ' \xef\x01\x00\x00\x00' @ 0 : 0; will stop at (end)

@@ -1,0 +1,19 @@
+[Added Associations]
+application/x-shellscript=org.xfce.mousepad.desktop;kitty-open.desktop;nvim.desktop;vim.desktop;
+image/jpeg=org.gnome.Loupe.desktop;chromium.desktop;firefox.desktop;swappy.desktop;
+image/png=org.gnome.Loupe.desktop;swappy.desktop;chromium.desktop;
+text/plain=org.xfce.mousepad.desktop;nvim.desktop;vim.desktop;
+video/mp4=vlc.desktop;
+
+[Default Applications]
+application/x-shellscript=org.xfce.mousepad.desktop;
+image/jpeg=org.gnome.Loupe.desktop;
+image/png=org.gnome.Loupe.desktop;
+inode/directory=org.kde.dolphin.desktop
+text/html=chromium.desktop
+text/plain=org.xfce.mousepad.desktop;
+video/mp4=vlc.desktop;
+x-scheme-handler/about=chromium.desktop
+x-scheme-handler/http=chromium.desktop
+x-scheme-handler/https=chromium.desktop
+x-scheme-handler/unknown=chromium.desktop

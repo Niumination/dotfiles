@@ -1,0 +1,193 @@
+2024-11-12 14:03:55.317 [info] Extension host with pid 76782 started
+2024-11-12 14:03:55.317 [info] Skipping acquiring lock for /home/zaryu/.config/Code - OSS/User/workspaceStorage/af7e5132bc7f071ecb72be41a34baefd.
+2024-11-12 14:03:57.380 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-11-12 14:03:57.521 [info] ExtensionService#_doActivateExtension arrterian.nix-env-selector, startup: false, activationEvent: 'onLanguage'
+2024-11-12 14:03:57.765 [info] ExtensionService#_doActivateExtension sourcegraph.cody-ai, startup: false, activationEvent: 'onLanguage'
+2024-11-12 14:04:00.651 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:javascript'
+2024-11-12 14:04:00.963 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-11-12 14:04:02.448 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-11-12 14:04:02.842 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-11-12 14:04:04.182 [info] Eager extensions activated
+2024-11-12 14:04:06.666 [error] [sourcegraph.cody-ai] provider FAILED
+2024-11-12 14:04:06.667 [error] Error: Illegal value for `line`
+	at uM.t (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:121:1005)
+	at Object.lineAt (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:121:72)
+	at EditCodeAction.provideCodeActions (/home/zaryu/.vscode-oss/extensions/sourcegraph.cody-ai-1.38.0-universal/dist/extension.node.js:186567:48)
+	at Vg.provideCodeActions (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:137:130794)
+	at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:137:159116
+	at qt.s (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:137:154117)
+	at qt.$provideCodeActions (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:137:159104)
+	at py.S (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:113311)
+	at py.Q (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:113091)
+	at py.M (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:112142)
+	at py.L (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:111285)
+	at mh.value (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:110082)
+	at D.B (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:746)
+	at D.fire (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:964)
+	at Vn.fire (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:9457)
+	at mh.value (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:13279)
+	at D.B (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:746)
+	at D.fire (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:964)
+	at Vn.fire (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:9457)
+	at MessagePortMain.<anonymous> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:11571)
+	at MessagePortMain.emit (node:events:519:28)
+	at MessagePortMain.emit (node:domain:488:12)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+2024-11-12 14:04:06.715 [error] [sourcegraph.cody-ai] provider FAILED
+2024-11-12 14:04:06.716 [error] Error: Illegal value for `line`
+	at uM.t (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:121:1005)
+	at Object.lineAt (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:121:72)
+	at EditCodeAction.provideCodeActions (/home/zaryu/.vscode-oss/extensions/sourcegraph.cody-ai-1.38.0-universal/dist/extension.node.js:186567:48)
+	at Vg.provideCodeActions (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:137:130794)
+	at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:137:159116
+	at qt.s (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:137:154117)
+	at qt.$provideCodeActions (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:137:159104)
+	at py.S (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:113311)
+	at py.Q (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:113091)
+	at py.M (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:112142)
+	at py.L (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:111285)
+	at mh.value (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:110082)
+	at D.B (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:746)
+	at D.fire (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:964)
+	at Vn.fire (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:9457)
+	at mh.value (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:13279)
+	at D.B (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:746)
+	at D.fire (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:964)
+	at Vn.fire (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:9457)
+	at MessagePortMain.<anonymous> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:11571)
+	at MessagePortMain.emit (node:events:519:28)
+	at MessagePortMain.emit (node:domain:488:12)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+2024-11-12 14:04:06.742 [error] [sourcegraph.cody-ai] provider FAILED
+2024-11-12 14:04:06.743 [error] Error: Illegal value for `line`
+	at uM.t (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:121:1005)
+	at Object.lineAt (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:121:72)
+	at EditCodeAction.provideCodeActions (/home/zaryu/.vscode-oss/extensions/sourcegraph.cody-ai-1.38.0-universal/dist/extension.node.js:186567:48)
+	at Vg.provideCodeActions (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:137:130794)
+	at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:137:159116
+	at qt.s (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:137:154117)
+	at qt.$provideCodeActions (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:137:159104)
+	at py.S (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:113311)
+	at py.Q (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:113091)
+	at py.M (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:112142)
+	at py.L (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:111285)
+	at mh.value (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:110082)
+	at D.B (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:746)
+	at D.fire (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:964)
+	at Vn.fire (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:9457)
+	at mh.value (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:13279)
+	at D.B (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:746)
+	at D.fire (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:964)
+	at Vn.fire (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:9457)
+	at MessagePortMain.<anonymous> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:11571)
+	at MessagePortMain.emit (node:events:519:28)
+	at MessagePortMain.emit (node:domain:488:12)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+2024-11-12 14:04:06.755 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-11-12 14:04:06.838 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-11-12 14:04:07.118 [info] ExtensionService#_doActivateExtension jnoortheen.nix-ide, startup: false, activationEvent: 'onStartupFinished'
+2024-11-12 14:04:09.666 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-11-12 14:04:09.832 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-11-12 14:04:16.058 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2024-11-12 14:04:29.999 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+2024-11-12 14:04:30.079 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onLanguage:json'
+2024-11-12 14:13:24.959 [info] Extension host terminating: renderer closed the MessagePort
+2024-11-12 14:13:25.642 [error] TypeError: Cannot read properties of undefined (reading 'dispose')
+	at _d (/home/zaryu/.vscode-oss/extensions/jnoortheen.nix-ide-0.3.5-universal/dist/extension.js:44:45688)
+	at Object.Fw (/home/zaryu/.vscode-oss/extensions/jnoortheen.nix-ide-0.3.5-universal/dist/extension.js:44:46543)
+	at z_.eb (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:11724)
+	at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:9874
+	at Array.map (<anonymous>)
+	at z_.$ (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:9862)
+	at z_.terminate (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:10105)
+	at EC.terminate (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:119:1424)
+	at Zi (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:15063)
+	at MessagePortMain.<anonymous> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:11611)
+	at MessagePortMain.emit (node:events:519:28)
+	at MessagePortMain.emit (node:domain:488:12)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+	at Object.topLevelDomainCallback (node:domain:160:15)
+	at Object.callbackTrampoline (node:internal/async_hooks:128:24)
+2024-11-12 14:13:25.771 [error] Canceled: Canceled
+	at new tT (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:108738)
+	at py.U (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:113348)
+	at s.<computed>.n.charCodeAt.s.<computed> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:110842)
+	at Y0.g (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:32313)
+	at Y0.executeCommand (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:31817)
+	at r.registerCommand.description (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:31147)
+	at Y0.h (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:32833)
+	at Y0.g (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:31910)
+	at Y0.executeCommand (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:31817)
+	at Object.executeCommand (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:156:37246)
+	at mh.O [as value] (/usr/lib/code/extensions/git/dist/main.js:2:961845)
+	at D.B (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:746)
+	at D.C (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:816)
+	at D.fire (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:1033)
+	at Object.p [as dispose] (/usr/lib/code/extensions/git/dist/main.js:2:983333)
+	at /usr/lib/code/extensions/git/dist/main.js:2:989455
+	at Array.forEach (<anonymous>)
+	at b.dispose (/usr/lib/code/extensions/git/dist/main.js:2:989441)
+	at V1.<anonymous> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:108:19994)
+	at V1.dispose (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:108:20090)
+	at V1.<anonymous> (/usr/lib/code/extensions/git/dist/main.js:2:964255)
+	at V1.dispose (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:108:20090)
+	at ci (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:24:699)
+	at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:14992
+	at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:24:1009
+	at Object.dispose (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:7:2146)
+	at z_.eb (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:11919)
+	at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:9874
+	at Array.map (<anonymous>)
+	at z_.$ (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:9862)
+	at z_.terminate (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:10105)
+	at EC.terminate (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:119:1424)
+	at Zi (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:15063)
+	at MessagePortMain.<anonymous> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:11611)
+	at MessagePortMain.emit (node:events:519:28)
+	at MessagePortMain.emit (node:domain:488:12)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+	at Object.topLevelDomainCallback (node:domain:160:15)
+	at Object.callbackTrampoline (node:internal/async_hooks:128:24) setContext undefined
+2024-11-12 14:13:25.777 [error] Canceled: Canceled
+	at new tT (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:108738)
+	at py.U (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:113348)
+	at s.<computed>.n.charCodeAt.s.<computed> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:110842)
+	at Y0.g (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:32313)
+	at Y0.executeCommand (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:31817)
+	at r.registerCommand.description (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:31147)
+	at Y0.h (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:32833)
+	at Y0.g (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:31910)
+	at Y0.executeCommand (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:31817)
+	at Object.executeCommand (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:156:37246)
+	at set hasGitHubRepositories (/usr/lib/code/extensions/github/dist/extension.js:2:328633)
+	at /usr/lib/code/extensions/github/dist/extension.js:2:329592
+	at mh.value (/usr/lib/code/extensions/git/dist/main.js:2:1073936)
+	at D.B (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:746)
+	at D.C (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:816)
+	at D.fire (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:1033)
+	at Object.p [as dispose] (/usr/lib/code/extensions/git/dist/main.js:2:983333)
+	at /usr/lib/code/extensions/git/dist/main.js:2:989455
+	at Array.forEach (<anonymous>)
+	at b.dispose (/usr/lib/code/extensions/git/dist/main.js:2:989441)
+	at V1.<anonymous> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:108:19994)
+	at V1.dispose (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:108:20090)
+	at V1.<anonymous> (/usr/lib/code/extensions/git/dist/main.js:2:964255)
+	at V1.dispose (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:108:20090)
+	at ci (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:24:699)
+	at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:14992
+	at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:24:1009
+	at Object.dispose (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:7:2146)
+	at z_.eb (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:11919)
+	at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:9874
+	at Array.map (<anonymous>)
+	at z_.$ (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:9862)
+	at z_.terminate (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:10105)
+	at EC.terminate (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:119:1424)
+	at Zi (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:15063)
+	at MessagePortMain.<anonymous> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:11611)
+	at MessagePortMain.emit (node:events:519:28)
+	at MessagePortMain.emit (node:domain:488:12)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+	at Object.topLevelDomainCallback (node:domain:160:15)
+	at Object.callbackTrampoline (node:internal/async_hooks:128:24) setContext undefined
+2024-11-12 14:13:25.949 [info] Extension host with pid 76782 exiting with code 0

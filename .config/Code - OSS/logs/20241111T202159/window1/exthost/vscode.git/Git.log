@@ -1,0 +1,238 @@
+2024-11-11 20:22:08.471 [info] [main] Log level: Info
+2024-11-11 20:22:08.471 [info] [main] Validating found git in: "git"
+2024-11-11 20:22:08.471 [info] [main] Using git "2.47.0" from "git"
+2024-11-11 20:22:08.471 [info] [Model][doInitialScan] Initial repository scan started
+2024-11-11 20:22:08.471 [info] > git rev-parse --show-toplevel [20ms]
+2024-11-11 20:22:08.471 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:08.525 [info] > git rev-parse --show-toplevel [7ms]
+2024-11-11 20:22:08.525 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:11.049 [info] > git rev-parse --show-toplevel [2502ms]
+2024-11-11 20:22:11.049 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:11.345 [info] > git rev-parse --show-toplevel [29ms]
+2024-11-11 20:22:11.345 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:11.751 [info] > git rev-parse --show-toplevel [381ms]
+2024-11-11 20:22:11.751 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:11.867 [info] > git rev-parse --show-toplevel [14ms]
+2024-11-11 20:22:11.868 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:12.028 [info] > git rev-parse --show-toplevel [142ms]
+2024-11-11 20:22:13.235 [info] > git rev-parse --git-dir --git-common-dir [496ms]
+2024-11-11 20:22:13.282 [info] [Model][openRepository] Opened repository: /home/zaryu/.config/ags
+2024-11-11 20:22:13.528 [info] > git rev-parse --show-toplevel [69ms]
+2024-11-11 20:22:13.528 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:13.531 [info] > git config --get commit.template [87ms]
+2024-11-11 20:22:13.576 [info] > git rev-parse --show-toplevel [24ms]
+2024-11-11 20:22:13.576 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:13.594 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [23ms]
+2024-11-11 20:22:13.610 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/zaryu/.config/ags/.git/refs/remotes/origin/master'
+2024-11-11 20:22:13.612 [info] > git rev-parse --show-toplevel [19ms]
+2024-11-11 20:22:13.612 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:13.628 [info] > git rev-parse refs/remotes/origin/master [18ms]
+2024-11-11 20:22:13.671 [info] > git status -z -uall [24ms]
+2024-11-11 20:22:13.674 [info] > git rev-parse --show-toplevel [47ms]
+2024-11-11 20:22:13.674 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:13.694 [info] > git rev-parse --show-toplevel [5ms]
+2024-11-11 20:22:13.694 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:13.715 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [48ms]
+2024-11-11 20:22:13.777 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [27ms]
+2024-11-11 20:22:13.795 [info] > git rev-parse --show-toplevel [82ms]
+2024-11-11 20:22:13.795 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:13.813 [info] > git config --local branch.master.vscode-merge-base [18ms]
+2024-11-11 20:22:13.813 [warning] [Git][config] git config failed: Failed to execute git
+2024-11-11 20:22:13.829 [info] > git config --get commit.template [56ms]
+2024-11-11 20:22:13.838 [info] > git rev-parse --show-toplevel [28ms]
+2024-11-11 20:22:13.838 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:13.869 [info] > git reflog master --grep-reflog=branch: Created from *. [41ms]
+2024-11-11 20:22:13.886 [info] > git rev-parse --show-toplevel [18ms]
+2024-11-11 20:22:13.886 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:13.887 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [35ms]
+2024-11-11 20:22:13.916 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/zaryu/.config/ags/.git/refs/remotes/origin/master'
+2024-11-11 20:22:13.918 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [36ms]
+2024-11-11 20:22:13.936 [info] > git rev-parse refs/remotes/origin/master [20ms]
+2024-11-11 20:22:13.969 [info] > git rev-parse --show-toplevel [68ms]
+2024-11-11 20:22:13.969 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:13.997 [info] > git status -z -uall [44ms]
+2024-11-11 20:22:13.998 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [29ms]
+2024-11-11 20:22:14.027 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/master refs/remotes/origin/master [94ms]
+2024-11-11 20:22:14.068 [info] > git check-ignore -v -z --stdin [9ms]
+2024-11-11 20:22:14.070 [info] > git config --local branch.master.vscode-merge-base origin/master [28ms]
+2024-11-11 20:22:14.073 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [51ms]
+2024-11-11 20:22:14.089 [info] > git rev-parse --show-toplevel [95ms]
+2024-11-11 20:22:14.089 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:14.138 [info] > git config --local branch.master.vscode-merge-base [50ms]
+2024-11-11 20:22:14.200 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/master refs/remotes/origin/master [46ms]
+2024-11-11 20:22:14.223 [info] > git rev-parse --show-toplevel [86ms]
+2024-11-11 20:22:14.223 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:14.224 [info] > git config --get commit.template [103ms]
+2024-11-11 20:22:14.240 [info] > git merge-base refs/heads/master refs/remotes/origin/master [20ms]
+2024-11-11 20:22:14.289 [info] > git diff --name-status -z --diff-filter=ADMR a7855baf13c6abdd0b0e988e4390112cd7deda67...refs/remotes/origin/master [23ms]
+2024-11-11 20:22:14.292 [info] > git rev-parse --show-toplevel [53ms]
+2024-11-11 20:22:14.292 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:14.312 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [25ms]
+2024-11-11 20:22:14.327 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/zaryu/.config/ags/.git/refs/remotes/origin/master'
+2024-11-11 20:22:14.329 [info] > git rev-parse --show-toplevel [19ms]
+2024-11-11 20:22:14.329 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:14.525 [info] > git rev-parse refs/remotes/origin/master [198ms]
+2024-11-11 20:22:14.586 [info] > git status -z -uall [43ms]
+2024-11-11 20:22:14.587 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [28ms]
+2024-11-11 20:22:14.599 [info] > git rev-parse --show-toplevel [74ms]
+2024-11-11 20:22:14.599 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:14.640 [info] > git rev-parse --show-toplevel [10ms]
+2024-11-11 20:22:14.641 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:14.671 [info] > git rev-parse --show-toplevel [6ms]
+2024-11-11 20:22:14.671 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:14.693 [info] > git rev-parse --show-toplevel [4ms]
+2024-11-11 20:22:14.693 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:14.773 [info] > git rev-parse --show-toplevel [6ms]
+2024-11-11 20:22:14.773 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:14.793 [info] > git rev-parse --show-toplevel [2ms]
+2024-11-11 20:22:14.793 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:14.815 [info] > git rev-parse --show-toplevel [5ms]
+2024-11-11 20:22:14.815 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:14.837 [info] > git rev-parse --show-toplevel [2ms]
+2024-11-11 20:22:14.837 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:14.857 [info] > git rev-parse --show-toplevel [3ms]
+2024-11-11 20:22:14.857 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:14.875 [info] > git rev-parse --show-toplevel [3ms]
+2024-11-11 20:22:14.875 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:14.892 [info] > git rev-parse --show-toplevel [3ms]
+2024-11-11 20:22:14.892 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:14.912 [info] > git rev-parse --show-toplevel [4ms]
+2024-11-11 20:22:14.912 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:14.932 [info] > git rev-parse --show-toplevel [3ms]
+2024-11-11 20:22:14.932 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:14.955 [info] > git rev-parse --show-toplevel [3ms]
+2024-11-11 20:22:14.955 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:14.984 [info] > git rev-parse --show-toplevel [8ms]
+2024-11-11 20:22:14.984 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:15.003 [info] > git rev-parse --show-toplevel [4ms]
+2024-11-11 20:22:15.003 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:15.027 [info] > git rev-parse --show-toplevel [6ms]
+2024-11-11 20:22:15.027 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:15.048 [info] > git rev-parse --show-toplevel [5ms]
+2024-11-11 20:22:15.048 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:15.084 [info] > git rev-parse --show-toplevel [15ms]
+2024-11-11 20:22:15.084 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:15.121 [info] > git rev-parse --show-toplevel [6ms]
+2024-11-11 20:22:15.121 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:15.154 [info] > git rev-parse --show-toplevel [9ms]
+2024-11-11 20:22:15.154 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:15.181 [info] > git rev-parse --show-toplevel [3ms]
+2024-11-11 20:22:15.181 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:15.198 [info] > git rev-parse --show-toplevel [3ms]
+2024-11-11 20:22:15.198 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:15.217 [info] > git rev-parse --show-toplevel [1ms]
+2024-11-11 20:22:15.217 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:15.245 [info] > git rev-parse --show-toplevel [13ms]
+2024-11-11 20:22:15.245 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:15.262 [info] > git rev-parse --show-toplevel [3ms]
+2024-11-11 20:22:15.262 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:15.294 [info] > git rev-parse --show-toplevel [17ms]
+2024-11-11 20:22:15.294 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:15.332 [info] > git rev-parse --show-toplevel [8ms]
+2024-11-11 20:22:15.332 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:16.639 [info] > git rev-parse --show-toplevel [996ms]
+2024-11-11 20:22:16.639 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:16.729 [info] > git rev-parse --show-toplevel [66ms]
+2024-11-11 20:22:16.729 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:17.160 [info] > git rev-parse --show-toplevel [354ms]
+2024-11-11 20:22:17.160 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:17.556 [info] > git rev-parse --show-toplevel [15ms]
+2024-11-11 20:22:17.556 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:17.558 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2024-11-11 20:22:17.778 [info] > git show --textconv :.prettierrc [157ms]
+2024-11-11 20:22:17.779 [info] > git show --textconv :config.js [72ms]
+2024-11-11 20:22:17.788 [info] > git ls-files --stage -- /home/zaryu/.config/ags/.prettierrc [121ms]
+2024-11-11 20:22:17.863 [info] > git cat-file -s 6e88f127f51aead22ec7ea0b28646a189acfe0b2 [29ms]
+2024-11-11 20:22:17.870 [info] > git rev-parse --show-toplevel [97ms]
+2024-11-11 20:22:17.871 [info] > git ls-files --stage -- /home/zaryu/.config/ags/config.js [128ms]
+2024-11-11 20:22:17.960 [info] > git cat-file -s 01d6ae869806a0d5eeea2d87f679e2e9ec5854e2 [47ms]
+2024-11-11 20:22:17.974 [info] > git rev-parse --show-toplevel [16ms]
+2024-11-11 20:22:33.759 [info] > git rev-parse --show-toplevel [17ms]
+2024-11-11 20:22:33.759 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:22:43.877 [info] > git rev-parse --show-toplevel [25ms]
+2024-11-11 20:22:43.877 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:23:09.161 [info] > git check-ignore -v -z --stdin [8ms]
+2024-11-11 20:23:13.007 [info] > git rev-parse --show-toplevel [19ms]
+2024-11-11 20:23:13.007 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:23:13.763 [info] > git check-ignore -v -z --stdin [3ms]
+2024-11-11 20:23:42.031 [info] > git check-ignore -v -z --stdin [155ms]
+2024-11-11 20:23:42.314 [info] > git config --get commit.template [4ms]
+2024-11-11 20:23:42.365 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [19ms]
+2024-11-11 20:23:42.429 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/zaryu/.config/ags/.git/refs/remotes/origin/master'
+2024-11-11 20:23:42.441 [info] > git rev-parse refs/remotes/origin/master [11ms]
+2024-11-11 20:23:42.505 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [8ms]
+2024-11-11 20:23:42.566 [info] > git status -z -uall [95ms]
+2024-11-11 20:23:43.101 [info] > git rev-parse --show-toplevel [3ms]
+2024-11-11 20:23:57.172 [info] > git check-ignore -v -z --stdin [10ms]
+2024-11-11 20:23:57.520 [info] > git config --get commit.template [10ms]
+2024-11-11 20:23:57.587 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [44ms]
+2024-11-11 20:23:57.618 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/zaryu/.config/ags/.git/refs/remotes/origin/master'
+2024-11-11 20:23:57.633 [info] > git rev-parse refs/remotes/origin/master [15ms]
+2024-11-11 20:23:57.719 [info] > git status -z -uall [38ms]
+2024-11-11 20:23:57.725 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [12ms]
+2024-11-11 20:23:58.046 [info] > git check-ignore -v -z --stdin [6ms]
+2024-11-11 20:23:58.255 [info] > git rev-parse --show-toplevel [4ms]
+2024-11-11 20:26:14.886 [info] > git rev-parse --show-toplevel [51ms]
+2024-11-11 20:26:14.888 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:26:37.649 [info] > git config --get commit.template [27ms]
+2024-11-11 20:26:37.671 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [25ms]
+2024-11-11 20:26:37.692 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/zaryu/.config/ags/.git/refs/remotes/origin/master'
+2024-11-11 20:26:37.695 [info] > git rev-parse refs/remotes/origin/master [3ms]
+2024-11-11 20:26:37.745 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [7ms]
+2024-11-11 20:26:37.796 [info] > git status -z -uall [80ms]
+2024-11-11 20:26:38.343 [info] > git rev-parse --show-toplevel [4ms]
+2024-11-11 20:28:26.689 [info] > git config --get commit.template [29ms]
+2024-11-11 20:28:26.693 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [6ms]
+2024-11-11 20:28:26.719 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/zaryu/.config/ags/.git/refs/remotes/origin/master'
+2024-11-11 20:28:26.722 [info] > git rev-parse refs/remotes/origin/master [3ms]
+2024-11-11 20:28:26.809 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [25ms]
+2024-11-11 20:28:26.816 [info] > git status -z -uall [66ms]
+2024-11-11 20:28:27.357 [info] > git rev-parse --show-toplevel [3ms]
+2024-11-11 20:29:00.811 [info] > git config --get commit.template [3ms]
+2024-11-11 20:29:00.838 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [5ms]
+2024-11-11 20:29:00.860 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/zaryu/.config/ags/.git/refs/remotes/origin/master'
+2024-11-11 20:29:00.864 [info] > git rev-parse refs/remotes/origin/master [3ms]
+2024-11-11 20:29:00.918 [info] > git status -z -uall [30ms]
+2024-11-11 20:29:00.924 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [9ms]
+2024-11-11 20:29:01.463 [info] > git rev-parse --show-toplevel [3ms]
+2024-11-11 20:31:11.566 [info] > git rev-parse --show-toplevel [33ms]
+2024-11-11 20:31:11.566 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:31:11.595 [info] > git rev-parse --show-toplevel [2ms]
+2024-11-11 20:31:11.595 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:31:19.081 [info] > git rev-parse --show-toplevel [4ms]
+2024-11-11 20:31:19.082 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-11-11 20:32:58.556 [info] > git config --get commit.template [43ms]
+2024-11-11 20:32:58.562 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [10ms]
+2024-11-11 20:32:58.593 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/zaryu/.config/ags/.git/refs/remotes/origin/master'
+2024-11-11 20:32:58.597 [info] > git rev-parse refs/remotes/origin/master [4ms]
+2024-11-11 20:32:58.652 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [5ms]
+2024-11-11 20:32:58.755 [info] > git status -z -uall [135ms]
+2024-11-11 20:32:59.293 [info] > git rev-parse --show-toplevel [3ms]
+2024-11-11 20:33:44.593 [info] > git config --get commit.template [4ms]
+2024-11-11 20:33:44.620 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [4ms]
+2024-11-11 20:33:44.641 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/zaryu/.config/ags/.git/refs/remotes/origin/master'
+2024-11-11 20:33:44.644 [info] > git rev-parse refs/remotes/origin/master [3ms]
+2024-11-11 20:33:44.694 [info] > git status -z -uall [28ms]
+2024-11-11 20:33:44.698 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [7ms]
+2024-11-11 20:33:45.229 [info] > git rev-parse --show-toplevel [3ms]
+2024-11-11 20:34:16.526 [info] > git config --get commit.template [6ms]
+2024-11-11 20:34:16.556 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2024-11-11 20:34:16.582 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/zaryu/.config/ags/.git/refs/remotes/origin/master'
+2024-11-11 20:34:16.587 [info] > git rev-parse refs/remotes/origin/master [4ms]
+2024-11-11 20:34:16.649 [info] > git status -z -uall [36ms]
+2024-11-11 20:34:16.650 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [7ms]
+2024-11-11 20:34:17.183 [info] > git rev-parse --show-toplevel [4ms]
+2024-11-11 20:35:27.294 [info] > git config --get commit.template [26ms]
+2024-11-11 20:35:27.296 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [5ms]
+2024-11-11 20:35:27.320 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/zaryu/.config/ags/.git/refs/remotes/origin/master'
+2024-11-11 20:35:27.324 [info] > git rev-parse refs/remotes/origin/master [4ms]
+2024-11-11 20:35:27.371 [info] > git status -z -uall [26ms]
+2024-11-11 20:35:27.378 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [8ms]
+2024-11-11 20:35:27.911 [info] > git rev-parse --show-toplevel [3ms]
+2024-11-11 20:35:44.754 [info] > git config --get commit.template [4ms]
+2024-11-11 20:35:44.783 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [5ms]
+2024-11-11 20:35:44.806 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/zaryu/.config/ags/.git/refs/remotes/origin/master'
+2024-11-11 20:35:44.810 [info] > git rev-parse refs/remotes/origin/master [3ms]
+2024-11-11 20:35:44.858 [info] > git status -z -uall [26ms]
+2024-11-11 20:35:44.862 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [6ms]
+2024-11-11 20:35:45.393 [info] > git rev-parse --show-toplevel [3ms]

@@ -1,0 +1,8 @@
+2024-11-06 10:06:01.713 [warning] Creation of workbench contribution 'workbench.contrib.preferencesActions' took 24ms.
+2024-11-06 10:06:04.074 [info] Started local extension host with pid 2116.
+2024-11-06 10:06:11.624 [warning] [mainThreadStorage] large extension state detected (extensionId: sourcegraph.cody-ai, global: true): 1742.8984375kb. Consider to use 'storageUri' or 'globalStorageUri' to store this data on disk instead.
+2024-11-06 10:06:14.505 [info] [perf] Render performance baseline is 285ms
+2024-11-06 10:06:33.420 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
+2024-11-06 10:06:33.687 [warning] [backup tracker] suspended, ignoring unregister event file:///home/zaryu/.vscode-oss/extensions/sourcegraph.cody-ai-1.38.0-universal/walkthroughs/cody_tutorial.py 
+2024-11-06 10:06:34.396 [info] Started local extension host with pid 2378.
+2024-11-06 10:06:34.397 [warning] [lifecycle] onWillShutdown is taking a long time, pending operations: join.workingCopyHistory

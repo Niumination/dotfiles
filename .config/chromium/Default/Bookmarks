@@ -1,0 +1,254 @@
+{
+   "checksum": "4b042ee2c4172d3cbb7f39a07a2d7fdd",
+   "roots": {
+      "bookmark_bar": {
+         "children": [  ],
+         "date_added": "13372510451852123",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "date_added": "13372512213029456",
+            "date_last_used": "0",
+            "guid": "3d2f2539-9fdb-4a43-bd76-df8639939530",
+            "id": "5",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "horriblename/hyprgrass: hyprland plugin for touch gestures",
+            "type": "url",
+            "url": "https://github.com/horriblename/hyprgrass"
+         }, {
+            "date_added": "13375039964158732",
+            "date_last_used": "0",
+            "guid": "f70fb3ba-6a0d-4435-b60c-801dee132fa1",
+            "id": "7",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Install Obsidian on Linux | Flathub",
+            "type": "url",
+            "url": "https://flathub.org/apps/md.obsidian.Obsidian"
+         }, {
+            "children": [ {
+               "date_added": "13375277075850070",
+               "date_last_used": "13375792389952212",
+               "guid": "37f9be81-0e38-4304-815e-aeaa6cb1c3c6",
+               "id": "9",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "nwg-piotr/nwg-hello: GTK3-based greeter for greetd written in python",
+               "type": "url",
+               "url": "https://github.com/nwg-piotr/nwg-hello"
+            }, {
+               "date_added": "13375277102306429",
+               "date_last_used": "13375792387670653",
+               "guid": "0cf9c49c-9ffc-425a-9702-eea32a380c9a",
+               "id": "11",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "nwg-piotr/nwg-panel: GTK3-based panel for sway and Hyprland Wayland compositors",
+               "type": "url",
+               "url": "https://github.com/nwg-piotr/nwg-panel"
+            }, {
+               "date_added": "13375277124898511",
+               "date_last_used": "13375792384671916",
+               "guid": "61918386-6f70-4347-a2fb-916c936ca6fb",
+               "id": "12",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "nwg-piotr/nwg-shell-config: nwg-shell configuration utility",
+               "type": "url",
+               "url": "https://github.com/nwg-piotr/nwg-shell-config"
+            }, {
+               "date_added": "13375277139226870",
+               "date_last_used": "13375792383104998",
+               "guid": "3a701714-cb44-4d3d-a07c-4954e4f0e9bb",
+               "id": "13",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "nwg-piotr/nwg-menu: MenuStart plugin to nwg-panel, also capable of working standalone",
+               "type": "url",
+               "url": "https://github.com/nwg-piotr/nwg-menu"
+            }, {
+               "date_added": "13375277164714959",
+               "date_last_used": "13375792381300896",
+               "guid": "41baee48-33e7-4fbf-8aea-49fed5e804da",
+               "id": "14",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "nwg-piotr/nwg-wrapper: Wrapper to display a script output or a text file content on the desktop in sway or other wlroots-based compositors",
+               "type": "url",
+               "url": "https://github.com/nwg-piotr/nwg-wrapper"
+            }, {
+               "date_added": "13375277201547328",
+               "date_last_used": "13375792379918933",
+               "guid": "88db0381-7330-4e3b-84c1-c90f69fdacd8",
+               "id": "15",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "nwg-piotr/nwg-launchers: GTK-based launchers: application grid, button bar, dmenu for sway and other window managers",
+               "type": "url",
+               "url": "https://github.com/nwg-piotr/nwg-launchers"
+            }, {
+               "date_added": "13375277209155534",
+               "date_last_used": "13375792378828368",
+               "guid": "5d0822fe-5199-4eab-9482-74c478475bdb",
+               "id": "16",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "nwg-piotr/lightdm-nwg-greeter: A fork of LightDM Elephant Greeter, intended to replace sddm on nwg-iso.",
+               "type": "url",
+               "url": "https://github.com/nwg-piotr/lightdm-nwg-greeter"
+            }, {
+               "date_added": "13375277238900957",
+               "date_last_used": "13375792378036195",
+               "guid": "401ab731-a422-4945-a665-68819d9459d5",
+               "id": "17",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "nwg-piotr/nwgcc: nwg Control Center",
+               "type": "url",
+               "url": "https://github.com/nwg-piotr/nwgcc"
+            }, {
+               "date_added": "13375277297877077",
+               "date_last_used": "13375792376410447",
+               "guid": "777436c9-822b-427c-97a1-f21f024c9bbe",
+               "id": "18",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "nwg-piotr/nwg-dock-hyprland: GTK3-based dock for Hyprland",
+               "type": "url",
+               "url": "https://github.com/nwg-piotr/nwg-dock-hyprland"
+            }, {
+               "date_added": "13375792353827702",
+               "date_last_used": "0",
+               "guid": "d8736db5-9016-49f1-a86a-159f46ec9f51",
+               "id": "20",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "sandeng1440/nixos-config: This is a nix flake to facilitate the use of prasanthrangan's hyprdots. It provides all the dependencies necessary to use hyprdots.",
+               "type": "url",
+               "url": "https://github.com/sandeng1440/nixos-config"
+            }, {
+               "date_added": "13375847802958516",
+               "date_last_used": "0",
+               "guid": "ef5f6630-61cf-4ccd-8a9b-cdd7b601beb7",
+               "id": "22",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Look how Open Voice OS is running on a 2017 Lenovo X270 laptop 💻 - Community Projects / OpenVoiceOS's Voice AI Platform - Open Source Conversational AI Community",
+               "type": "url",
+               "url": "https://community.openconversational.ai/t/look-how-open-voice-os-is-running-on-a-2017-lenovo-x270-laptop/16379/2"
+            }, {
+               "date_added": "13375847809274412",
+               "date_last_used": "0",
+               "guid": "97d74ef2-4a74-4e41-b361-1a26a936b218",
+               "id": "23",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "A touch of AI and voice assistant added to my Hyprland with Open Voice OS : r/hyprland",
+               "type": "url",
+               "url": "https://www.reddit.com/r/hyprland/comments/1g78s5c/a_touch_of_ai_and_voice_assistant_added_to_my/"
+            }, {
+               "date_added": "13375906368149944",
+               "date_last_used": "0",
+               "guid": "47626b5b-5526-4849-8510-752b5eee71f8",
+               "id": "25",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "OpenVoice/docs/USAGE.md at main · myshell-ai/OpenVoice",
+               "type": "url",
+               "url": "https://github.com/myshell-ai/OpenVoice/blob/main/docs/USAGE.md"
+            }, {
+               "date_added": "13375906380461720",
+               "date_last_used": "0",
+               "guid": "6e847315-380f-4fd7-b012-97384ce20c89",
+               "id": "26",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "myshell-ai/OpenVoiceV2 · Hugging Face",
+               "type": "url",
+               "url": "https://huggingface.co/myshell-ai/OpenVoiceV2#install-on-other-platforms"
+            }, {
+               "date_added": "13375906423675817",
+               "date_last_used": "0",
+               "guid": "5eed6e5d-bcd7-45be-ae43-5f5c199bcbd5",
+               "id": "27",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "OpenVoiceV2 - a Hugging Face Space by myshell-ai",
+               "type": "url",
+               "url": "https://huggingface.co/spaces/myshell-ai/OpenVoiceV2"
+            }, {
+               "date_added": "13375967276162904",
+               "date_last_used": "13376031309605226",
+               "guid": "31e54ce5-f977-43fe-a7ac-cac1fd9bea85",
+               "id": "29",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Huge list of alternative sites like CAI [Character.AI] AI RP & Conversation sites : r/CharacterAI_No_Filter",
+               "type": "url",
+               "url": "https://www.reddit.com/r/CharacterAI_No_Filter/comments/13wy462/huge_list_of_alternative_sites_like_cai/"
+            }, {
+               "date_added": "13375990204800278",
+               "date_last_used": "0",
+               "guid": "bc8532a1-cc57-4010-8d30-ee0af0d774f4",
+               "id": "31",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Gofile - Your all-in-one storage solution",
+               "type": "url",
+               "url": "https://gofile.io/d/bV4rI9"
+            } ],
+            "date_added": "13375277089746968",
+            "date_last_used": "0",
+            "date_modified": "13375990204800278",
+            "guid": "87fb4410-4105-425d-ba78-e96b5dd4e954",
+            "id": "10",
+            "name": "updgrade",
+            "type": "folder"
+         } ],
+         "date_added": "13372510451852131",
+         "date_last_used": "0",
+         "date_modified": "13375277075850070",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13372510451852134",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

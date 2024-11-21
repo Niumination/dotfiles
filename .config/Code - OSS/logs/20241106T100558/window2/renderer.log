@@ -1,0 +1,117 @@
+2024-11-06 10:06:01.717 [warning] Creation of workbench contribution 'workbench.contrib.preferencesActions' took 25ms.
+2024-11-06 10:06:03.689 [info] Started local extension host with pid 2094.
+2024-11-06 10:06:11.923 [warning] [mainThreadStorage] large extension state detected (extensionId: sourcegraph.cody-ai, global: true): 1742.8984375kb. Consider to use 'storageUri' or 'globalStorageUri' to store this data on disk instead.
+2024-11-06 10:06:12.548 [info] [perf] Render performance baseline is 181ms
+2024-11-06 10:06:49.588 [error] [network] #3: https://open-vsx.org/vscode/gallery/extensionquery - error POST Canceled
+2024-11-06 10:06:54.495 [error] [Extension Host] {"stack":"Error: Timeout\n\tat Timeout._onTimeout (/home/zaryu/.vscode-oss/extensions/sourcegraph.cody-ai-1.38.0-universal/dist/extension.node.js:168679:20)\n\tat listOnTimeout (node:internal/timers:581:17)\n\tat process.processTimers (node:internal/timers:519:7)","message":"Timeout","name":"Error"}
+2024-11-06 10:07:55.193 [error] [Extension Host] {"stack":"Error: Timeout\n\tat Timeout._onTimeout (/home/zaryu/.vscode-oss/extensions/sourcegraph.cody-ai-1.38.0-universal/dist/extension.node.js:168679:20)\n\tat listOnTimeout (node:internal/timers:581:17)\n\tat process.processTimers (node:internal/timers:519:7)","message":"Timeout","name":"Error"}
+2024-11-06 10:08:34.992 [error] [Extension Host] TypeError: Cannot read properties of undefined (reading 'replace')
+	at n (/home/zaryu/.vscode-oss/extensions/jnoortheen.nix-ide-0.3.5-universal/dist/extension.js:1:1090)
+	at Bi (/home/zaryu/.vscode-oss/extensions/jnoortheen.nix-ide-0.3.5-universal/dist/extension.js:44:41680)
+	at Ho.get (/home/zaryu/.vscode-oss/extensions/jnoortheen.nix-ide-0.3.5-universal/dist/extension.js:44:41969)
+	at get formatterPath (/home/zaryu/.vscode-oss/extensions/jnoortheen.nix-ide-0.3.5-universal/dist/extension.js:44:42024)
+	at Object.<anonymous> (/home/zaryu/.vscode-oss/extensions/jnoortheen.nix-ide-0.3.5-universal/dist/extension.js:44:42449)
+	at Module._compile (node:internal/modules/cjs/loader:1484:14)
+	at Module._extensions..js (node:internal/modules/cjs/loader:1564:10)
+	at Module.load (node:internal/modules/cjs/loader:1295:32)
+	at Module._load (node:internal/modules/cjs/loader:1111:12)
+	at c._load (node:electron/js2c/node_init:2:16955)
+	at e._load (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:10879)
+	at t._load (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:166:22433)
+	at i._load (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:158:4651)
+	at Module.require (node:internal/modules/cjs/loader:1318:19)
+	at Hook._require.Module2.require (/home/zaryu/.vscode-oss/extensions/sourcegraph.cody-ai-1.38.0-universal/dist/extension.node.js:161903:45)
+	at require (node:internal/modules/helpers:179:18)
+	at z_.xb (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:166:23753)
+	at async Promise.all (index 0)
+2024-11-06 10:08:34.997 [error] [Extension Host] TypeError: Cannot read properties of undefined (reading 'replace')
+	at n (/home/zaryu/.vscode-oss/extensions/jnoortheen.nix-ide-0.3.5-universal/dist/extension.js:1:1090)
+	at Bi (/home/zaryu/.vscode-oss/extensions/jnoortheen.nix-ide-0.3.5-universal/dist/extension.js:44:41680)
+	at Ho.get (/home/zaryu/.vscode-oss/extensions/jnoortheen.nix-ide-0.3.5-universal/dist/extension.js:44:41969)
+	at get formatterPath (/home/zaryu/.vscode-oss/extensions/jnoortheen.nix-ide-0.3.5-universal/dist/extension.js:44:42024)
+	at Object.<anonymous> (/home/zaryu/.vscode-oss/extensions/jnoortheen.nix-ide-0.3.5-universal/dist/extension.js:44:42501)
+	at Module._compile (node:internal/modules/cjs/loader:1484:14)
+	at Module._extensions..js (node:internal/modules/cjs/loader:1564:10)
+	at Module.load (node:internal/modules/cjs/loader:1295:32)
+	at Module._load (node:internal/modules/cjs/loader:1111:12)
+	at c._load (node:electron/js2c/node_init:2:16955)
+	at e._load (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:10879)
+	at t._load (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:166:22433)
+	at i._load (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:158:4651)
+	at Module.require (node:internal/modules/cjs/loader:1318:19)
+	at Hook._require.Module2.require (/home/zaryu/.vscode-oss/extensions/sourcegraph.cody-ai-1.38.0-universal/dist/extension.node.js:161903:45)
+	at require (node:internal/modules/helpers:179:18)
+	at z_.xb (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:166:23753)
+	at async Promise.all (index 0)
+2024-11-06 10:08:54.570 [error] [Extension Host] {"stack":"Error: Timeout\n\tat Timeout._onTimeout (/home/zaryu/.vscode-oss/extensions/sourcegraph.cody-ai-1.38.0-universal/dist/extension.node.js:168679:20)\n\tat listOnTimeout (node:internal/timers:581:17)\n\tat process.processTimers (node:internal/timers:519:7)","message":"Timeout","name":"Error","promesa$protocols$IPromiseFactory$":"[object Object]","promesa$protocols$IPromiseFactory$_promise$arity$1":"function(a){return promesa.impl.rejected(this)}"}
+2024-11-06 10:09:44.720 [error] [Extension Host] {"stack":"Error: Timeout\n\tat Timeout._onTimeout (/home/zaryu/.vscode-oss/extensions/sourcegraph.cody-ai-1.38.0-universal/dist/extension.node.js:168679:20)\n\tat listOnTimeout (node:internal/timers:581:17)\n\tat process.processTimers (node:internal/timers:519:7)","message":"Timeout","name":"Error","promesa$protocols$IPromiseFactory$":"[object Object]","promesa$protocols$IPromiseFactory$_promise$arity$1":"function(a){return promesa.impl.rejected(this)}"}
+2024-11-06 10:13:59.863 [error] [Extension Host] {"stack":"Error: Timeout\n\tat Timeout._onTimeout (/home/zaryu/.vscode-oss/extensions/sourcegraph.cody-ai-1.38.0-universal/dist/extension.node.js:168679:20)\n\tat listOnTimeout (node:internal/timers:581:17)\n\tat process.processTimers (node:internal/timers:519:7)","message":"Timeout","name":"Error","promesa$protocols$IPromiseFactory$":"[object Object]","promesa$protocols$IPromiseFactory$_promise$arity$1":"function(a){return promesa.impl.rejected(this)}"}
+2024-11-06 10:14:30.507 [info] Started local extension host with pid 2782.
+2024-11-06 10:14:32.240 [warning] [mainThreadStorage] large extension state detected (extensionId: sourcegraph.cody-ai, global: true): 1742.8984375kb. Consider to use 'storageUri' or 'globalStorageUri' to store this data on disk instead.
+2024-11-06 10:14:43.949 [error] [Extension Host] TypeError: Cannot read properties of undefined (reading 'replace')
+	at n (/home/zaryu/.vscode-oss/extensions/jnoortheen.nix-ide-0.3.5-universal/dist/extension.js:1:1090)
+	at Bi (/home/zaryu/.vscode-oss/extensions/jnoortheen.nix-ide-0.3.5-universal/dist/extension.js:44:41680)
+	at Ho.get (/home/zaryu/.vscode-oss/extensions/jnoortheen.nix-ide-0.3.5-universal/dist/extension.js:44:41969)
+	at get formatterPath (/home/zaryu/.vscode-oss/extensions/jnoortheen.nix-ide-0.3.5-universal/dist/extension.js:44:42024)
+	at Object.<anonymous> (/home/zaryu/.vscode-oss/extensions/jnoortheen.nix-ide-0.3.5-universal/dist/extension.js:44:42449)
+	at Module._compile (node:internal/modules/cjs/loader:1484:14)
+	at Module._extensions..js (node:internal/modules/cjs/loader:1564:10)
+	at Module.load (node:internal/modules/cjs/loader:1295:32)
+	at Module._load (node:internal/modules/cjs/loader:1111:12)
+	at c._load (node:electron/js2c/node_init:2:16955)
+	at e._load (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:10879)
+	at t._load (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:166:22433)
+	at i._load (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:158:4651)
+	at Module.require (node:internal/modules/cjs/loader:1318:19)
+	at Hook._require.Module2.require (/home/zaryu/.vscode-oss/extensions/sourcegraph.cody-ai-1.38.0-universal/dist/extension.node.js:161903:45)
+	at require (node:internal/modules/helpers:179:18)
+	at z_.xb (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:166:23753)
+	at async Promise.all (index 0)
+2024-11-06 10:14:43.951 [error] [Extension Host] TypeError: Cannot read properties of undefined (reading 'replace')
+	at n (/home/zaryu/.vscode-oss/extensions/jnoortheen.nix-ide-0.3.5-universal/dist/extension.js:1:1090)
+	at Bi (/home/zaryu/.vscode-oss/extensions/jnoortheen.nix-ide-0.3.5-universal/dist/extension.js:44:41680)
+	at Ho.get (/home/zaryu/.vscode-oss/extensions/jnoortheen.nix-ide-0.3.5-universal/dist/extension.js:44:41969)
+	at get formatterPath (/home/zaryu/.vscode-oss/extensions/jnoortheen.nix-ide-0.3.5-universal/dist/extension.js:44:42024)
+	at Object.<anonymous> (/home/zaryu/.vscode-oss/extensions/jnoortheen.nix-ide-0.3.5-universal/dist/extension.js:44:42501)
+	at Module._compile (node:internal/modules/cjs/loader:1484:14)
+	at Module._extensions..js (node:internal/modules/cjs/loader:1564:10)
+	at Module.load (node:internal/modules/cjs/loader:1295:32)
+	at Module._load (node:internal/modules/cjs/loader:1111:12)
+	at c._load (node:electron/js2c/node_init:2:16955)
+	at e._load (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:10879)
+	at t._load (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:166:22433)
+	at i._load (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:158:4651)
+	at Module.require (node:internal/modules/cjs/loader:1318:19)
+	at Hook._require.Module2.require (/home/zaryu/.vscode-oss/extensions/sourcegraph.cody-ai-1.38.0-universal/dist/extension.node.js:161903:45)
+	at require (node:internal/modules/helpers:179:18)
+	at z_.xb (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:166:23753)
+	at async Promise.all (index 0)
+2024-11-06 10:15:15.159 [error] [Extension Host] {"stack":"Error: Timeout\n\tat Timeout._onTimeout (/home/zaryu/.vscode-oss/extensions/sourcegraph.cody-ai-1.38.0-universal/dist/extension.node.js:168679:20)\n\tat listOnTimeout (node:internal/timers:581:17)\n\tat process.processTimers (node:internal/timers:519:7)","message":"Timeout","name":"Error"}
+2024-11-06 10:15:30.097 [error] [Extension Host] Command error ["nix-instantiate","--parse","/home/zaryu/ZHALL_ABSTRACT/nixos-config-hz/flake.nix"] Error: spawn nix-instantiate ENOENT
+	at ChildProcess._handle.onexit (node:internal/child_process:286:19)
+	at onErrorNT (node:internal/child_process:484:16)
+	at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2024-11-06 10:15:53.502 [error] r.commandPalette is not iterable: TypeError: r.commandPalette is not iterable
+    at KVe.render (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:657:85850)
+    at $Ye.u (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2211:5382)
+    at $Ye.s (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2211:5199)
+    at new $Ye (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2211:3780)
+    at tht.o (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1354:1586)
+    at tht.createInstance (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1354:1083)
+    at NYe.D (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2211:1805)
+    at vZ.value (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2211:840)
+    at x.B (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:30:747)
+    at x.C (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:30:817)
+2024-11-06 10:16:15.690 [error] [Extension Host] {"stack":"Error: Timeout\n\tat Timeout._onTimeout (/home/zaryu/.vscode-oss/extensions/sourcegraph.cody-ai-1.38.0-universal/dist/extension.node.js:168679:20)\n\tat listOnTimeout (node:internal/timers:581:17)\n\tat process.processTimers (node:internal/timers:519:7)","message":"Timeout","name":"Error"}
+2024-11-06 10:16:51.007 [error] [Extension Host] Command error ["nix-instantiate","--parse","/home/zaryu/ZHALL_ABSTRACT/nixos-config-hz/flake.nix"] Error: spawn nix-instantiate ENOENT
+	at ChildProcess._handle.onexit (node:internal/child_process:286:19)
+	at onErrorNT (node:internal/child_process:484:16)
+	at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2024-11-06 10:17:14.080 [error] [Extension Host] {"stack":"Error: Timeout\n\tat Timeout._onTimeout (/home/zaryu/.vscode-oss/extensions/sourcegraph.cody-ai-1.38.0-universal/dist/extension.node.js:168679:20)\n\tat listOnTimeout (node:internal/timers:581:17)\n\tat process.processTimers (node:internal/timers:519:7)","message":"Timeout","name":"Error","promesa$protocols$IPromiseFactory$":"[object Object]","promesa$protocols$IPromiseFactory$_promise$arity$1":"function(a){return promesa.impl.rejected(this)}"}
+2024-11-06 10:31:44.888 [error] [network] #25: https://open-vsx.org/vscode/asset/bbenoist/Nix/1.0.1/Microsoft.VisualStudio.Services.Content.Details?targetPlatform=universal - error GET Failed to fetch
+2024-11-06 10:45:11.980 [error] [Extension Host] {"stack":"Error: Timeout\n\tat Timeout._onTimeout (/home/zaryu/.vscode-oss/extensions/sourcegraph.cody-ai-1.38.0-universal/dist/extension.node.js:168679:20)\n\tat listOnTimeout (node:internal/timers:581:17)\n\tat process.processTimers (node:internal/timers:519:7)","message":"Timeout","name":"Error","promesa$protocols$IPromiseFactory$":"[object Object]","promesa$protocols$IPromiseFactory$_promise$arity$1":"function(a){return promesa.impl.rejected(this)}"}
+2024-11-06 11:15:12.385 [error] [Extension Host] {"stack":"Error: Timeout\n\tat Timeout._onTimeout (/home/zaryu/.vscode-oss/extensions/sourcegraph.cody-ai-1.38.0-universal/dist/extension.node.js:168679:20)\n\tat listOnTimeout (node:internal/timers:581:17)\n\tat process.processTimers (node:internal/timers:519:7)","message":"Timeout","name":"Error","promesa$protocols$IPromiseFactory$":"[object Object]","promesa$protocols$IPromiseFactory$_promise$arity$1":"function(a){return promesa.impl.rejected(this)}"}
+2024-11-06 11:45:13.164 [error] [Extension Host] {"stack":"Error: Timeout\n\tat Timeout._onTimeout (/home/zaryu/.vscode-oss/extensions/sourcegraph.cody-ai-1.38.0-universal/dist/extension.node.js:168679:20)\n\tat listOnTimeout (node:internal/timers:581:17)\n\tat process.processTimers (node:internal/timers:519:7)","message":"Timeout","name":"Error","promesa$protocols$IPromiseFactory$":"[object Object]","promesa$protocols$IPromiseFactory$_promise$arity$1":"function(a){return promesa.impl.rejected(this)}"}
+2024-11-06 12:14:54.605 [error] [Extension Host] {"stack":"Error: Timeout\n\tat Timeout._onTimeout (/home/zaryu/.vscode-oss/extensions/sourcegraph.cody-ai-1.38.0-universal/dist/extension.node.js:168679:20)\n\tat listOnTimeout (node:internal/timers:581:17)\n\tat process.processTimers (node:internal/timers:519:7)","message":"Timeout","name":"Error","promesa$protocols$IPromiseFactory$":"[object Object]","promesa$protocols$IPromiseFactory$_promise$arity$1":"function(a){return promesa.impl.rejected(this)}"}
+2024-11-06 12:45:13.887 [error] [Extension Host] {"stack":"Error: Timeout\n\tat Timeout._onTimeout (/home/zaryu/.vscode-oss/extensions/sourcegraph.cody-ai-1.38.0-universal/dist/extension.node.js:168679:20)\n\tat listOnTimeout (node:internal/timers:581:17)\n\tat process.processTimers (node:internal/timers:519:7)","message":"Timeout","name":"Error","promesa$protocols$IPromiseFactory$":"[object Object]","promesa$protocols$IPromiseFactory$_promise$arity$1":"function(a){return promesa.impl.rejected(this)}"}
+2024-11-06 13:15:13.017 [error] [Extension Host] {"stack":"Error: Timeout\n\tat Timeout._onTimeout (/home/zaryu/.vscode-oss/extensions/sourcegraph.cody-ai-1.38.0-universal/dist/extension.node.js:168679:20)\n\tat listOnTimeout (node:internal/timers:581:17)\n\tat process.processTimers (node:internal/timers:519:7)","message":"Timeout","name":"Error","promesa$protocols$IPromiseFactory$":"[object Object]","promesa$protocols$IPromiseFactory$_promise$arity$1":"function(a){return promesa.impl.rejected(this)}"}

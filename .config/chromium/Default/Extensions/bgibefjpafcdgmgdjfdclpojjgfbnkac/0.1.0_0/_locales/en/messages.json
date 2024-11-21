@@ -1,0 +1,20 @@
+{
+   "detailDesc": {
+      "description": "Detailed description",
+      "message": "A discrete options menu is located at the top (or left, depending on orientation) which allows the user to rotate the orientation, flip the position of panes, or add panes."
+   },
+   "extDesc": {
+      "description": "Extension description",
+      "message": "Load sites—side by side"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "Side|Side"
+   },
+   "gutterHorizontal": {
+      "message": "Open with left/right split"
+   },
+   "gutterVertical": {
+      "message": "Open with top/bottom split"
+   }
+}

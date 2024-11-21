@@ -1,55 +1,58 @@
-"use strict";
-// Import
-import Gdk from 'gi://Gdk';
 import GLib from 'gi://GLib';
-import App from 'resource:///com/github/Aylur/ags/app.js'
-import * as Utils from 'resource:///com/github/Aylur/ags/utils.js'
-// Stuff
-import userOptions from './modules/.configuration/user_options.js';
-// Widgets Sideleft
-import { Bar, BarCornerTopleft, BarCornerTopright } from './modules/bar/main.js';
-import SideLeft from './modules/sideleft/main.js';
-import { COMPILED_STYLE_DIR } from './init.js';
 
-// Widget Sideright
-import SideRight from './modules/sideright/main.js';
+const main = '/tmp/ags/hyprpanel/main.js';
+const entry = `${App.configDir}/main.ts`;
+const bundler = GLib.getenv('AGS_BUNDLER') || 'bun';
 
-// BAR
-import Session from './modules/session/main.js';
-const range = (length, start = 1) => Array.from({ length }, (_, i) => i + start);
-function forMonitors(widget) {
-    const n = Gdk.Display.get_default()?.get_n_monitors() || 1;
-    return range(n, 0).map(widget).flat(1);
+const v = {
+    ags: pkg.version?.split('.').map(Number) || [],
+    expect: [1, 8, 1],
+};
+
+try {
+    switch (bundler) {
+        case 'bun':
+            await Utils.execAsync([
+                'bun',
+                'build',
+                entry,
+                '--outfile',
+                main,
+                '--external',
+                'resource://*',
+                '--external',
+                'gi://*',
+                '--external',
+                'file://*',
+            ]);
+            break;
+
+        case 'esbuild':
+            await Utils.execAsync([
+                'esbuild',
+                '--bundle',
+                entry,
+                '--format=esm',
+                `--outfile=${main}`,
+                '--external:resource://*',
+                '--external:gi://*',
+                '--external:file://*',
+            ]);
+            break;
+
+        default:
+            throw `"${bundler}" is not a valid bundler`;
+    }
+
+    if (v.ags[1] < v.expect[1] || v.ags[2] < v.expect[2]) {
+        print(`HyprPanel needs atleast v${v.expect.join('.')} of AGS, yours is v${v.ags.join('.')}`);
+        App.quit();
+    }
+
+    await import(`file://${main}`);
+} catch (error) {
+    console.error(error);
+    App.quit();
 }
-function forMonitorsAsync(widget) {
-    const n = Gdk.Display.get_default()?.get_n_monitors() || 1;
-    return range(n, 0).forEach((n) => widget(n).catch(print))
-}
 
-
-
-// Start stuff
-handleStyles(true);
-
-const Windows = () => [
-    SideLeft(),
-// siderigt
-    SideRight(),
-// BAR
-    //forMonitors(Session),
-    //...(userOptions.appearance.barRoundCorners ? [
-    //    forMonitors(BarCornerTopleft),
-    //    forMonitors(BarCornerTopright),
-    //] : []),
-];
-
-
-//App.config({
-//    windows: Windows(),
-//});
-
-App.config({
-    windows: Windows().flat(1),
-});
-
-//forMonitorsAsync(Bar);
+export {};

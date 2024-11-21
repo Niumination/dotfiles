@@ -1,0 +1,12 @@
+2024/11/06-16:53:58.028 97e Reusing MANIFEST /home/zaryu/.config/chromium/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/11/06-16:53:58.029 97e Recovering log #4
+2024/11/06-16:53:58.087 97e Reusing old log /home/zaryu/.config/chromium/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000004.log 
+2024/11/06-16:54:22.839 98e Level-0 table #8: started
+2024/11/06-16:54:22.963 98e Level-0 table #8: 3027681 bytes OK
+2024/11/06-16:54:22.969 98e Delete type=0 #4
+2024/11/06-16:54:44.529 98e Compacting 1@1 + 1@2 files
+2024/11/06-16:54:44.590 98e Generated table #9@1: 195 keys, 408255 bytes
+2024/11/06-16:54:44.590 98e Compacted 1@1 + 1@2 files => 408255 bytes
+2024/11/06-16:54:44.595 98e compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/11/06-16:54:44.596 98e Delete type=2 #5
+2024/11/06-16:54:44.596 98e Delete type=2 #8

@@ -1,0 +1,25 @@
+{
+   "action": {
+      "default_icon": "./icon/icon-48.png",
+      "default_popup": "popup.html",
+      "default_title": "Split Tab"
+   },
+   "author": "Split Tab",
+   "background": {
+      "service_worker": "background.min.js"
+   },
+   "default_locale": "en",
+   "description": "Split tabs, supercharge productivity with multitasking",
+   "host_permissions": [ "*://*/*" ],
+   "icons": {
+      "128": "./icon/icon-128.png",
+      "16": "./icon/icon-16.png",
+      "48": "./icon/icon-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlCt6ipw1tRvyND47MJFQK05grMiFKMLLDV9JwbdobtBssGNN6ve/Z7H0c+wgChMzv24HMdDp38BDjesMdQf7EBSvFghrpFkqS/tuKMwBvxKp/WJoLa+Q7zfMDQfH9vO3GYn6cxmqBuqUV6p9d9jJfop+K7fsQtkLZLAAp+N3JxMV7n0kNlnzE78P6nx59Zl3l2/9t7hpqaqdzpoApUX9bZ2Mn6nwGQ4NvlTbWEAniXzm01fU04WCkp6iyjSpDAYvLWvaljXAg16D+2hy/aHBYdggygtVEOX0I4jcJZzQT7zbj4gtQtHBB2vYeedeWGhjMYNK9+pH0uwQ677HHLfVCwIDAQAB",
+   "manifest_version": 3,
+   "name": "Split Tab",
+   "permissions": [ "activeTab", "contextMenus", "storage", "declarativeNetRequest" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.1.0"
+}
