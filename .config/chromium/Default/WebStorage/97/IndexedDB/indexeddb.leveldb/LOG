@@ -1,3 +1,0 @@
-2024/11/09-15:10:47.737 4ef Creating DB /home/zaryu/.config/chromium/Default/WebStorage/97/IndexedDB/indexeddb.leveldb since it was missing.
-2024/11/09-15:10:47.747 4ef Reusing MANIFEST /home/zaryu/.config/chromium/Default/WebStorage/97/IndexedDB/indexeddb.leveldb/MANIFEST-000001
-2024/11/09-15:10:47.789 4ee Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

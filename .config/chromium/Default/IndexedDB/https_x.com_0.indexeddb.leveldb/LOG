@@ -1,7 +1,0 @@
-2024/11/05-11:30:05.371 2a8e Reusing MANIFEST /home/zaryu/.config/chromium/Default/IndexedDB/https_x.com_0.indexeddb.leveldb/MANIFEST-000001
-2024/11/05-11:30:05.372 2a8e Recovering log #3
-2024/11/05-11:30:05.373 2a8e Reusing old log /home/zaryu/.config/chromium/Default/IndexedDB/https_x.com_0.indexeddb.leveldb/000003.log 
-2024/11/05-11:30:32.216 2a8f Level-0 table #5: started
-2024/11/05-11:30:32.219 2a8f Level-0 table #5: 830 bytes OK
-2024/11/05-11:30:32.222 2a8f Delete type=0 #3
-2024/11/05-11:30:32.224 2a8f Manual compaction at level-0 from (begin) .. (end); will stop at (end)

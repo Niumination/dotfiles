@@ -1,6 +1,0 @@
-2024/11/06-13:50:01.493 1320 Creating DB /home/zaryu/.config/chromium/Default/IndexedDB/https_gitlab.com_0.indexeddb.leveldb since it was missing.
-2024/11/06-13:50:01.512 1320 Reusing MANIFEST /home/zaryu/.config/chromium/Default/IndexedDB/https_gitlab.com_0.indexeddb.leveldb/MANIFEST-000001
-2024/11/06-14:26:59.555 1320 Level-0 table #5: started
-2024/11/06-14:26:59.570 1320 Level-0 table #5: 86234 bytes OK
-2024/11/06-14:26:59.581 1320 Delete type=0 #3
-2024/11/06-14:26:59.586 1320 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
