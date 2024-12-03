@@ -1,0 +1,19 @@
+2024/11/05-12:14:14.124 2a8e Reusing MANIFEST /home/zaryu/.config/chromium/Default/IndexedDB/https_imgur.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/11/05-12:14:14.125 2a8e Recovering log #3
+2024/11/05-12:14:14.127 2a8e Reusing old log /home/zaryu/.config/chromium/Default/IndexedDB/https_imgur.com_0.indexeddb.leveldb/000003.log 
+2024/11/05-12:14:14.645 2a8e Level-0 table #5: started
+2024/11/05-12:14:14.660 2a8e Level-0 table #5: 3915 bytes OK
+2024/11/05-12:14:14.671 2a8e Delete type=0 #3
+2024/11/05-12:14:14.678 2a8e Manual compaction at level-0 from '\x00\x04\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/11/05-12:14:28.652 2a8f Level-0 table #7: started
+2024/11/05-12:14:28.656 2a8f Level-0 table #7: 5050 bytes OK
+2024/11/05-12:14:28.659 2a8f Delete type=0 #4
+2024/11/05-12:14:28.659 2a8f Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2024/11/05-12:14:28.660 2a8f Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x03\x01\x02\x013\x00[\x00D\x00E\x00F\x00A\x00U\x00L\x00T\x00]\x00!\x001\x00:\x007\x001\x008\x007\x007\x000\x001\x002\x005\x001\x009\x004\x00:\x00w\x00e\x00b\x00:\x006\x00a\x00f\x003\x00e\x009\x005\x00a\x006\x00d\x004\x005\x001\x000\x005\x00d\x004\x00a\x00f\x000\x007\x003' @ 175 : 1
+2024/11/05-12:14:28.660 2a8f Compacting 1@1 + 1@2 files
+2024/11/05-12:14:28.665 2a8f Generated table #8@1: 36 keys, 1571 bytes
+2024/11/05-12:14:28.666 2a8f Compacted 1@1 + 1@2 files => 1571 bytes
+2024/11/05-12:14:28.668 2a8f compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/11/05-12:14:28.669 2a8f Delete type=2 #7
+2024/11/05-12:14:28.669 2a8f Delete type=2 #5
+2024/11/05-12:14:28.670 2a8f Manual compaction at level-1 from '\x00\x03\x01\x02\x013\x00[\x00D\x00E\x00F\x00A\x00U\x00L\x00T\x00]\x00!\x001\x00:\x007\x001\x008\x007\x007\x000\x001\x002\x005\x001\x009\x004\x00:\x00w\x00e\x00b\x00:\x006\x00a\x00f\x003\x00e\x009\x005\x00a\x006\x00d\x004\x005\x001\x000\x005\x00d\x004\x00a\x00f\x000\x007\x003' @ 175 : 1 .. (end); will stop at (end)

@@ -1,0 +1,6 @@
+2024/10/07-13:47:45.154 514c Creating DB /home/zaryu/.config/chromium/Default/IndexedDB/https_sourcegraph.com_0.indexeddb.leveldb since it was missing.
+2024/10/07-13:47:45.168 514c Reusing MANIFEST /home/zaryu/.config/chromium/Default/IndexedDB/https_sourcegraph.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/10/07-13:47:52.543 514d Level-0 table #5: started
+2024/10/07-13:47:52.608 514d Level-0 table #5: 8507 bytes OK
+2024/10/07-13:47:52.627 514d Delete type=0 #3
+2024/10/07-13:47:52.629 514d Manual compaction at level-0 from (begin) .. (end); will stop at (end)

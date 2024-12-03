@@ -1,0 +1,6 @@
+2024/11/23-00:15:05.285 1b775 Creating DB /home/zaryu/.config/chromium/Default/WebStorage/127/IndexedDB/indexeddb.leveldb since it was missing.
+2024/11/23-00:15:05.300 1b775 Reusing MANIFEST /home/zaryu/.config/chromium/Default/WebStorage/127/IndexedDB/indexeddb.leveldb/MANIFEST-000001
+2024/11/23-00:17:10.313 1b775 Level-0 table #5: started
+2024/11/23-00:17:10.318 1b775 Level-0 table #5: 15230 bytes OK
+2024/11/23-00:17:10.322 1b775 Delete type=0 #3
+2024/11/23-00:17:10.322 1b775 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

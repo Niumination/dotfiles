@@ -1,0 +1,54 @@
+2024-12-03T04:40:48.015Z - info: [ui] [AppStore] loading 0 repositories from store
+2024-12-03T04:40:48.380Z - info: [ui] [Welcome] no sign in step found. ignoring...
+2024-12-03T04:40:48.403Z - info: [ui] launching: 3.4.2-linux1 (Linux 6.12.1-arch1-1)
+2024-12-03T04:40:48.418Z - info: [ui] execPath: '/nix/store/1nhvrjw8c6h6jka4pbl1y9zhl4kxxc15-github-desktop-3.4.2/opt/github-desktop'
+2024-12-03T04:40:48.428Z - info: [ui] [Welcome] no sign in step found. ignoring...
+2024-12-03T04:40:48.501Z - info: [ui] [Welcome] no sign in step found. ignoring...
+2024-12-03T04:40:51.043Z - info: [ui] Opt in reported.
+2024-12-03T04:40:54.122Z - info: [ui] [Welcome] advancing to step: SignInToDotComWithBrowser
+2024-12-03T04:40:54.126Z - info: [ui] [SignInStore] initializing OAuth flow
+2024-12-03T04:40:54.144Z - info: [main] opening in browser: https://github.com/login/oauth/authorize?client_id=3a723b10ac5575cc5bb9&scope=repo%20user%20workflow&state=8bc268a7-dee7-4dfd-b5c2-9589d50f30fb
+2024-12-03T04:40:54.145Z - info: [ui] [SignInStore] account resolved
+2024-12-03T04:40:54.146Z - info: [ui] [Welcome] current sign in state not found. ignoring...
+2024-12-03T04:40:59.376Z - info: [ui] [Welcome] kind Authentication is the same as Authentication. ignoring...
+2024-12-03T04:40:59.392Z - info: [ui] [Welcome] kind Authentication is the same as Authentication. ignoring...
+2024-12-03T04:41:29.951Z - info: [main] Received possible protocol arguments: 3
+2024-12-03T04:41:29.952Z - info: [main] Processing protocol url
+2024-12-03T04:41:29.986Z - info: [ui] [Welcome] kind Authentication is the same as Authentication. ignoring...
+2024-12-03T04:41:30.713Z - info: [main] Received possible protocol arguments: 2
+2024-12-03T04:41:30.739Z - info: [main] Processing protocol url
+2024-12-03T04:41:32.928Z - info: [ui] [AppStore] adding account Niumination (Niumination) to store
+2024-12-03T04:41:32.940Z - info: [ui] [Welcome] advancing to step: ConfigureGit
+2024-12-03T04:41:33.150Z - info: [ui] [Welcome] no sign in step found. ignoring...
+2024-12-03T04:41:33.848Z - info: [ui] Subscribed 'Niumination' to Alive channel
+2024-12-03T04:41:33.886Z - info: [ui] [Welcome] no sign in step found. ignoring...
+2024-12-03T04:41:42.598Z - info: [ui] [Welcome] no sign in step found. ignoring...
+2024-12-03T04:41:42.665Z - info: [ui] [Welcome] no sign in step found. ignoring...
+2024-12-03T04:45:21.658Z - info: [ui] Executing clone: git -c init.defaultBranch=main clone --recursive --progress -- https://github.com/Niumination/hyprnix.git /home/zaryu/GitHub/hyprnix (took 2.107s)
+2024-12-03T04:45:21.753Z - info: [ui] [AppStore] adding repository at /home/zaryu/GitHub/hyprnix to store
+2024-12-03T04:45:23.537Z - info: [ui] [BranchPruner] No branches to prune.
+2024-12-03T04:46:31.010Z - info: [ui] Executing updateRemoteHEAD: git remote set-head -a origin (took 1.924s)
+2024-12-03T04:48:28.917Z - info: [ui] Executing fetch: git fetch --progress --prune --recurse-submodules=on-demand origin (took 3.225s)
+2024-12-03T04:48:30.867Z - info: [ui] Executing updateRemoteHEAD: git remote set-head -a origin (took 1.946s)
+2024-12-03T04:48:48.659Z - info: [ui] Executing updateRemoteHEAD: git remote set-head -a origin (took 4.609s)
+2024-12-03T04:50:05.588Z - info: [main] opening in browser: https://github.com/Niumination/hyprnix
+2024-12-03T04:55:54.783Z - info: [ui] [BranchPruner] Last prune took place 11 minutes ago - skipping
+2024-12-03T05:01:21.218Z - info: [ui] [RepositoryIndicatorUpdater]: Refreshing sidebar indicators for 1 repositories took 0.9s of which 113.8s paused, total 114.7s
+2024-12-03T05:03:24.041Z - info: [ui] Executing clone: git -c init.defaultBranch=master clone --recursive --progress -- https://github.com/Niumination/dotfiles.git /home/zaryu/GitHub/dotfiles (took 418.265s)
+2024-12-03T05:03:24.227Z - info: [ui] [AppStore] adding repository at /home/zaryu/GitHub/dotfiles to store
+2024-12-03T05:03:25.373Z - info: [ui] [BranchPruner] Last prune took place 18 minutes ago - skipping
+2024-12-03T05:03:28.151Z - info: [ui] [BranchPruner] No branches to prune.
+2024-12-03T05:03:58.421Z - info: [ui] [BranchPruner] Last prune took place 19 minutes ago - skipping
+2024-12-03T05:04:02.924Z - info: [ui] [BranchPruner] Last prune took place 36 seconds ago - skipping
+2024-12-03T05:04:06.050Z - info: [ui] Executing fetch: git fetch --progress --prune --recurse-submodules=on-demand origin (took 3.197s)
+2024-12-03T05:04:08.061Z - info: [ui] Executing updateRemoteHEAD: git remote set-head -a origin (took 2.007s)
+2024-12-03T05:19:39.490Z - info: [ui] [RepositoryIndicatorUpdater]: Refreshing sidebar indicators for 1 repositories took 0.6s of which 0.0s paused, total 0.6s
+2024-12-03T05:36:14.151Z - info: [ui] [AppStore] loading 2 repositories from store
+2024-12-03T05:36:14.175Z - info: [ui] [AppStore] found account: Niumination (Niumination)
+2024-12-03T05:36:14.302Z - info: [ui] [BranchPruner] Last prune took place 33 minutes ago - skipping
+2024-12-03T05:36:15.111Z - info: [ui] launching: 3.4.2-linux1 (Linux 6.12.1-arch1-1)
+2024-12-03T05:36:15.116Z - info: [ui] execPath: '/nix/store/1nhvrjw8c6h6jka4pbl1y9zhl4kxxc15-github-desktop-3.4.2/opt/github-desktop'
+2024-12-03T05:36:15.922Z - info: [ui] Subscribed 'Niumination' to Alive channel
+2024-12-03T05:36:16.614Z - info: [ui] Stats reported.
+2024-12-03T05:36:44.954Z - info: [ui] Executing fetch: git fetch --progress --prune --recurse-submodules=on-demand origin (took 2.806s)
+2024-12-03T05:36:46.891Z - info: [ui] Executing updateRemoteHEAD: git remote set-head -a origin (took 1.932s)

@@ -1,0 +1,5 @@
+2024-11-30 03:34:44.526 [info] Extension host with pid 14362 started
+2024-11-30 03:34:50.527 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-11-30 03:34:50.613 [info] ExtensionService#_doActivateExtension arrterian.nix-env-selector, startup: true, activationEvent: '*'
+2024-11-30 03:34:51.125 [info] Extension host terminating: renderer closed the MessagePort
+2024-11-30 03:34:51.136 [info] Extension host with pid 14362 exiting with code 0

@@ -1,0 +1,54 @@
+@use 'sass:math';
+
+@import url('https://fonts.googleapis.com/css?family=Material+Icons|Space+Mono&subset=latin');
+@import 'sass/defs';
+@import 'sass/split';
+@import 'sass/inputs';
+@import 'sass/options';
+
+body {
+  font-family: $default-font-family;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  width: 100vw;
+
+  &.blank {
+    background: radial-gradient($default-grey 15%, transparent 16%), radial-gradient($default-grey 15%, transparent 16%), $default-white;
+    background-position: 0 0, 9px 9px;
+    background-size: 18px 18px;
+  }
+
+  &.error {
+    background: radial-gradient(lighten($default-error-background, 45) 15%, transparent 16%), radial-gradient(lighten($default-error-background, 45) 15%, transparent 16%), $default-white;
+    background-position: 0 0, 9px 9px;
+    background-size: 18px 18px;
+  }
+}
+
+iframe {
+  border: 0;
+  height: calc(100% - #{$default-height});
+  position: relative;
+  width: 100%;
+}
+
+.container {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100%;
+  justify-content: space-between;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 0;
+
+  &.split-horizontal {
+    flex-direction: row;
+  }
+
+  &.split-vertical {
+    flex-direction: column;
+  }
+}

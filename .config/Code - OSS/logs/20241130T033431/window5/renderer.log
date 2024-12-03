@@ -1,0 +1,5 @@
+2024-11-30 03:34:59.561 [warning] Creation of workbench contribution 'workbench.contrib.preferencesActions' took 106ms.
+2024-11-30 03:34:59.564 [warning] Creation of workbench contribution 'workbench.contrib.explorerViewletViews' took 27ms.
+2024-11-30 03:34:59.650 [warning] Creation of workbench contribution 'workbench.contrib.localTerminalBackend' took 24ms.
+2024-11-30 03:35:00.134 [warning] Creation of workbench contribution 'workbench.contrib.interactiveDocument' took 49ms.
+2024-11-30 03:35:03.199 [info] Started local extension host with pid 15516.

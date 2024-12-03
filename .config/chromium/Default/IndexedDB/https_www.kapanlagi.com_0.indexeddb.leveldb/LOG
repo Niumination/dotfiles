@@ -1,0 +1,6 @@
+2024/10/25-00:46:17.774 4e822 Creating DB /home/zaryu/.config/chromium/Default/IndexedDB/https_www.kapanlagi.com_0.indexeddb.leveldb since it was missing.
+2024/10/25-00:46:17.792 4e822 Reusing MANIFEST /home/zaryu/.config/chromium/Default/IndexedDB/https_www.kapanlagi.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/10/25-00:49:05.761 4e7b3 Level-0 table #5: started
+2024/10/25-00:49:05.764 4e7b3 Level-0 table #5: 2549 bytes OK
+2024/10/25-00:49:05.768 4e7b3 Delete type=0 #3
+2024/10/25-00:49:05.768 4e7b3 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

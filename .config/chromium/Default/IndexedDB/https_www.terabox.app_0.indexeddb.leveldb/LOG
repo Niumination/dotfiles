@@ -1,0 +1,14 @@
+2024/11/29-16:52:49.959 2148 Reusing MANIFEST /home/zaryu/.config/chromium/Default/IndexedDB/https_www.terabox.app_0.indexeddb.leveldb/MANIFEST-000001
+2024/11/29-16:52:49.961 2148 Recovering log #21
+2024/11/29-16:52:49.964 2148 Reusing old log /home/zaryu/.config/chromium/Default/IndexedDB/https_www.terabox.app_0.indexeddb.leveldb/000021.log 
+2024/11/29-16:52:49.965 2148 Delete type=2 #19
+2024/11/29-16:52:50.010 2156 Level-0 table #26: started
+2024/11/29-16:52:50.018 2156 Level-0 table #26: 9308 bytes OK
+2024/11/29-16:52:50.023 2156 Delete type=0 #21
+2024/11/29-16:52:50.030 2148 Manual compaction at level-0 from '\x00\x0b\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0c\x00\x00\x00' @ 0 : 0; will stop at '\x00\x0b\x00\x00\x05' @ 1243 : 1
+2024/11/29-16:52:50.031 2148 Compacting 1@0 + 1@1 files
+2024/11/29-16:52:50.057 2148 Generated table #27@0: 258 keys, 5400 bytes
+2024/11/29-16:52:50.060 2148 Compacted 1@0 + 1@1 files => 5400 bytes
+2024/11/29-16:52:50.069 2148 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/11/29-16:52:50.070 2148 Delete type=2 #26
+2024/11/29-16:52:50.076 214a Manual compaction at level-0 from '\x00\x0b\x00\x00\x05' @ 1243 : 1 .. '\x00\x0c\x00\x00\x00' @ 0 : 0; will stop at (end)

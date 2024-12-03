@@ -1,0 +1,8 @@
+[General]
+TerminalApplication=kitty
+
+[Icons]
+Theme=Vivid-Glassy-Dark-Icons
+
+[KShortcutsDialog Settings]
+Dialog Size=600,480
