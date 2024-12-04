@@ -1,9 +1,0 @@
-2024-11-30 03:35:01.319 [warning] Creation of workbench contribution 'workbench.contrib.preferencesActions' took 115ms.
-2024-11-30 03:35:01.331 [warning] Creation of workbench contribution 'workbench.contrib.explorerViewletViews' took 24ms.
-2024-11-30 03:35:01.374 [warning] Creation of workbench contribution 'workbench.contrib.editorAutoSave' took 34ms.
-2024-11-30 03:35:01.393 [warning] Creation of workbench contribution 'workbench.contrib.editorStatus' took 24ms.
-2024-11-30 03:35:01.535 [warning] Creation of workbench contribution 'workbench.contrib.textMateTokenizationInstantiator' took 23ms.
-2024-11-30 03:35:01.590 [warning] Creation of workbench contribution 'workbench.contrib.notebookChatContribution' took 40ms.
-2024-11-30 03:35:01.686 [warning] Creation of workbench contribution 'workbench.contrib.interactiveDocument' took 21ms.
-2024-11-30 03:35:01.734 [warning] Creation of workbench contribution 'workbench.contrib.userDataProfiles' took 21ms.
-2024-11-30 03:35:06.647 [info] Started local extension host with pid 15597.
